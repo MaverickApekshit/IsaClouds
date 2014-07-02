@@ -1,0 +1,427 @@
+/* Body and structure
+-------------------------------------------------- */
+
+body
+{
+	position: relative;
+	background: url(../images/bg_body-noise.png);
+}
+
+.custom-container /*Clear screen edges*/
+{
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+/* Faded out hr */
+hr.soften
+{
+	height: 1px;
+	margin: 60px 0;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	border: 0;
+}
+
+hr.soften1
+{
+	height: 1px;
+	margin: 60px 0;
+	background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.1), rgba(255,255,255,0));
+	background-image: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.1), rgba(255,255,255,0));
+	background-image: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.1), rgba(255,255,255,0));
+	background-image: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.1), rgba(255,255,255,0));
+	border: 0;
+}
+
+.copyhr
+{
+	background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.8), rgba(255,255,255,0));
+	background-image: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.8), rgba(255,255,255,0));
+	background-image: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.8), rgba(255,255,255,0));
+	background-image: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.8), rgba(255,255,255,0));
+	margin-bottom: 40px !important;
+}
+
+/* Jumbotrons
+-------------------------------------------------- */
+.jumbotron
+{
+	background: url("../images/home-banner-bg.jpg") bottom center no-repeat fixed;
+	background-size: cover;
+	position: relative;
+	padding: 40px 0 80px;
+	margin-bottom: 0;
+	color: #fff;
+	text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+	-webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+	-moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+	box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+}
+
+.jumbotron h1
+{
+	font-size: 4em;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 1.1em;
+	margin: 60px 0;
+	text-shadow: 0 1px 4px #000000;
+}
+
+.jumbotron h2
+{
+	font-weight: bold;
+	text-shadow: 0 1px 4px #000000;
+}
+
+.jumbotron p
+{
+	font-size: 1.4em;
+	font-weight: normal;
+	line-height: 1.4em;
+	margin-bottom: 60px;
+}
+
+/* Custom Button */
+.jumbotron .bigbtn
+{
+	box-shadow: inset 0 1px 0 #ffd265, 0 0 0 1px #912e01, 0 0 0 07px rgba(0,0,0,.1), 0 1px 4px rgba(0,0,0,.6);
+}
+
+.bigbtn
+{
+	color: #fff;
+	text-shadow: 0 1px 0 #912e01;
+	background-color: #d8c431;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: .3em 1.4em;
+	-webkit-border-radius: 2.8em;
+	-moz-border-radius: 2.8em;
+	-o-border-radius: 2.8em;
+	-ms-border-radius: 2.8em;
+	border-radius: 2.8em;
+	background-image: linear-gradient(bottom, rgb(255,96,43) 1%, rgb(255,148,67) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(255,96,43) 1%, rgb(255,148,67) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(255,96,43) 1%, rgb(255,148,67) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(255,96,43) 1%, rgb(255,148,67) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(255,96,43) 1%, rgb(255,148,67) 100%);
+	font-weight: 700;
+	font-style: normal;
+	overflow: visible;
+	border: none;
+	font-size: 24px;
+}
+
+.bigbtn:hover
+{
+	color: #fff;
+	text-decoration: none;
+	background-color: #ff831e;
+	background-image: linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
+}
+
+.bigbtn:active
+{
+	color: #fff;
+	text-decoration: none;
+	background-color: #ff831e;
+	background-image: linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
+}
+
+.solo-img
+{
+	margin-top: 2em;
+}
+
+#social-buttons
+{
+	color: #fff;
+	padding-top: 1em;
+}
+
+#social-buttons span
+{
+	margin-left: 1em;
+}
+
+/* Marketing section
+-------------------------------------------------- */
+
+.marketing
+{
+	color: #5a5a5a;
+}
+
+.marketing h1
+{
+	margin: 60px 0 10px;
+	font-size: 60px;
+	font-weight: 200;
+	line-height: 1;
+	letter-spacing: -1px;
+}
+
+.marketing h2
+{
+	font-weight: 200;
+	margin-bottom: 20px;
+	color: #5a5a5a;
+}
+
+.marketing p
+{
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.marketing .marketing-byline
+{
+	margin-bottom: 40px;
+	font-size: 20px;
+	font-weight: 300px;
+	line-height: 25px;
+	color: #999;
+}
+
+h2 a
+{
+	color: #5a5a5a;
+}
+
+h2 a:hover
+{
+	color: #61c168;
+	text-decoration: none;
+}
+
+h2 a:active
+{
+	color: #61c168;
+	text-decoration: none;
+}
+
+span.firstword
+{
+	border-bottom: 2px solid #B1EBB5;
+}
+
+.bordertop
+{
+	border-top: 1px solid #EEE;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+.tech-spec-img
+{
+	max-height: 250px;
+	
+}
+
+#sf-logo
+{
+	padding:0 3em 0 0;
+}
+
+#veeva-logo
+{
+	padding-top: 2em;
+}
+
+#heroku-logo
+{
+	padding-top: 1em;
+}
+
+.orange-building-bg
+{
+	background: #ffa753 url(../images/skyline.png) repeat-x bottom;
+}
+
+/* Footer
+-------------------------------------------------- */
+
+footer h2, footer h3, footer h4
+{
+	color: #fff;
+	font-weight: normal;
+}
+
+footer .copyright
+{
+	border-bottom: 0px;
+	font-size: 0.8em;
+	padding-bottom: 40px;
+}
+
+footer ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer_social
+{
+	padding: 0px;
+	margin: 0px;
+	right: 0px;
+	padding-top: 0px;
+	list-style-type: none;
+	top: 51px;
+}
+
+.footer_social li
+{
+	float: left;
+	margin-left: 15px;
+}
+
+.footer_social li:first-child
+{
+	margin-left: 0px;
+}
+
+.footer_social li a
+{
+	width: 48px;
+	height: 48px;
+	text-indent: -9999px;
+	border: 1px solid #000;
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.2);
+	background-color: #0d0d0d;
+	display: block;
+	-webkit-transition: background-color 250ms ease-in-out;
+	-moz-transition: background-color 250ms ease-in-out;
+	-o-transition: background-color 250ms ease-in-out;
+	transition: background-color 250ms ease-in-out;
+}
+
+.footer_social li a:active
+{
+	box-shadow: inset 0px 1px 3px rgba(0,0,0,0.8), 0px 1px 0px rgba(255,255,255,0.2);
+	position: relative;
+	top: 1px;
+}
+
+.footer_facebook
+{
+	background: url('../images/footer_facebook.png') no-repeat 50% 50% #0d0d0d;
+}
+
+.footer_facebook:hover
+{
+	background-color: #37589f;
+}
+
+.footer_twitter
+{
+	background: url('../images/footer_twitter.png') no-repeat 50% 50% #0d0d0d;
+}
+
+.footer_twitter:hover
+{
+	background-color: #1bd7ed;
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.6);
+}
+
+.footer_googleplus
+{
+	background: url('../images/footer_google.png') no-repeat
+	50% 50% #0d0d0d;
+}
+
+.footer_googleplus:hover
+{
+	background-color: #b70000;
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.6);
+}
+
+footer
+{
+	margin-top: 70px;
+	border-top: 1px solid #e5e5e5;
+	background: url('../images/bg_footer.png');
+	padding: 60px 0 0 0;
+	color: #919191;
+}
+
+footer a
+{
+	color: #fff;
+}
+
+footer a:hover
+{
+	color: #61c168;
+}
+
+.footer-links li
+{
+	line-height: 32px;
+	font-size: 12px;
+	border-bottom: 1px solid #232323;
+}
+
+.footer-links li:hover
+{
+	background: #1d1d1d;
+}
+
+/* Services Pages
+-------------------------------------------------- */
+
+#page_heading
+{
+	padding-top: 50px;
+}
+
+.button-padding
+{
+	margin-bottom: 60px;
+}
+
+.expert-services
+{
+	padding-left: 2em;
+}
+
+.expert-services span
+{
+	margin-right: 1em;
+}
+
+#partner h2
+{
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin-bottom: 40px;
+	line-height: 40px;
+	color: #999;
+}
+
+/* About Us
+-------------------------------------------------- */
+.aboutUsDP
+{
+	height: 250px;
+	width: 250px;
+}
+
+.social-icons span
+{
+	margin: 0.5em;
+	font-size: 2em;
+}
