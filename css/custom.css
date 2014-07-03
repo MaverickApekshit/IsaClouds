@@ -1,6 +1,5 @@
 /* Body and structure
 -------------------------------------------------- */
-
 body
 {
 	position: relative;
@@ -113,7 +112,7 @@ hr.soften1
 	font-style: normal;
 	overflow: visible;
 	border: none;
-	font-size: 24px;
+	font-size: 1.714285714285714em;
 }
 
 .bigbtn:hover
@@ -167,7 +166,7 @@ hr.soften1
 .marketing h1
 {
 	margin: 60px 0 10px;
-	font-size: 60px;
+	font-size: 4.285714285714286em;
 	font-weight: 200;
 	line-height: 1;
 	letter-spacing: -1px;
@@ -182,15 +181,15 @@ hr.soften1
 
 .marketing p
 {
-	font-size: 16px;
+	font-size: 1.142857142857143em;
 	line-height: 1.5;
 }
 
 .marketing .marketing-byline
 {
 	margin-bottom: 40px;
-	font-size: 20px;
-	font-weight: 300px;
+	font-size: 2.0em;
+	font-weight: 30.0em;
 	line-height: 25px;
 	color: #999;
 }
@@ -371,7 +370,7 @@ footer a:hover
 .footer-links li
 {
 	line-height: 32px;
-	font-size: 12px;
+	font-size: 0.8571428571428571em;
 	border-bottom: 1px solid #232323;
 }
 
@@ -414,6 +413,7 @@ footer a:hover
 
 /* About Us
 -------------------------------------------------- */
+
 .aboutUsDP
 {
 	height: 250px;
@@ -424,4 +424,68 @@ footer a:hover
 {
 	margin: 0.5em;
 	font-size: 2em;
+}
+
+/* Responsive
+-------------------------------------------------- */
+
+/* Tablet to desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 980px)
+{
+	.jumbotron h1
+	{
+		font-size: 3em;
+	}
+
+	.jumbotron p, .bigbtn
+	{
+		font-size: 18px;
+	}
+}
+
+/* Tablet
+------------------------- */
+@media (max-width: 767px)
+{
+	/* Widen masthead and social buttons to fill body padding */
+
+	.jumbotron
+	{
+		padding: 40px 0;
+	}
+
+	.jumbotron h1
+	{
+		font-size: 2.5em;
+	}
+
+	.jumbotron p, .bigbtn
+	{
+		font-size: 16px;
+	}
+}
+
+/*Landscape phones*/
+@media(max-width: 480px)
+{
+	.jumbotron h1
+	{
+		font-size: 2em;
+	}
+
+	.jumbotron p, .bigbtn
+	{
+		font-size: 14px;
+	}
+
+	.marketing h1
+	{
+		font-size: 40px;
+	}
+
+	.marketing-byline
+	{
+		font-size: 20px !important;
+	}
 }
