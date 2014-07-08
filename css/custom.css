@@ -44,9 +44,14 @@ hr.soften1
 	margin-bottom: 40px !important;
 }
 
-/* Jumbotrons
+.brand-color
+{
+	color: #61c168;
+}
+
+/* Masthead jumbotrons
 -------------------------------------------------- */
-.jumbotron
+.masthead
 {
 	background: url("../images/home-banner-bg.jpg") bottom center no-repeat fixed;
 	background-size: cover;
@@ -60,7 +65,7 @@ hr.soften1
 	box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
 }
 
-.jumbotron h1
+.masthead h1
 {
 	font-size: 4em;
 	font-weight: bold;
@@ -70,13 +75,13 @@ hr.soften1
 	text-shadow: 0 1px 4px #000000;
 }
 
-.jumbotron h2
+.masthead h2
 {
 	font-weight: bold;
 	text-shadow: 0 1px 4px #000000;
 }
 
-.jumbotron p
+.masthead p
 {
 	font-size: 1.4em;
 	font-weight: normal;
@@ -85,7 +90,7 @@ hr.soften1
 }
 
 /* Custom Button */
-.jumbotron .bigbtn
+.masthead .bigbtn
 {
 	box-shadow: inset 0 1px 0 #ffd265, 0 0 0 1px #912e01, 0 0 0 07px rgba(0,0,0,.1), 0 1px 4px rgba(0,0,0,.6);
 }
@@ -139,7 +144,7 @@ hr.soften1
 	background-image: -ms-linear-gradient(bottom, rgb(255,148,67) 1%, rgb(255,96,43) 100%);
 }
 
-.solo-img
+.tpad
 {
 	margin-top: 2em;
 }
@@ -411,19 +416,81 @@ footer a:hover
 	color: #999;
 }
 
-/* About Us
--------------------------------------------------- */
-
 .aboutUsDP
 {
-	height: 250px;
-	width: 250px;
+	max-height: 18em;
+	max-width: 18em;
 }
 
 .social-icons span
 {
-	margin: 0.5em;
+	margin: 0.15em;
 	font-size: 2em;
+}
+
+#linkedin-icon
+{
+	color: #007bb6;
+}
+
+#googleplus-icon
+{
+	color: #dd4b39;
+}
+
+#twitter-icon
+{
+	color: #00aced;
+}
+
+#facebook-icon
+{
+	color: #3b5998;
+}
+
+#github-icon
+{
+	color: #333;
+}
+
+#stumble-icon
+{
+	color: #EB4823;
+}
+
+
+
+/* Profile
+-------------------------------------------------- */
+#profile-jumbo h2
+{
+	font-size: 2.5em;
+	letter-spacing: -1px;
+}
+
+#profile-jumbo p
+{
+	font-size: 1.1em;
+}
+
+address a
+{
+	color: #333;
+}
+
+address a:hover
+{
+	text-decoration: none;
+}
+
+address a:active
+{
+	text-decoration: none;
+}
+
+#myTab a
+{
+	color: #61c168;
 }
 
 /* Responsive
@@ -433,14 +500,24 @@ footer a:hover
 ------------------------- */
 @media (min-width: 768px) and (max-width: 980px)
 {
-	.jumbotron h1
+	.masthead h1
 	{
 		font-size: 3em;
 	}
 
-	.jumbotron p, .bigbtn
+	.masthead p, .bigbtn
 	{
-		font-size: 18px;
+		font-size: 1.285714285714286em; /*18px*/
+	}
+
+	#profile-jumbo h2
+	{
+		font-size: 2em;
+	}
+
+	#profile-jumbo p
+	{
+		font-size: 1em;
 	}
 }
 
@@ -450,42 +527,62 @@ footer a:hover
 {
 	/* Widen masthead and social buttons to fill body padding */
 
-	.jumbotron
+	.masthead
 	{
 		padding: 40px 0;
 	}
 
-	.jumbotron h1
+	.masthead h1
 	{
 		font-size: 2.5em;
 	}
 
-	.jumbotron p, .bigbtn
+	.masthead p, .bigbtn
 	{
-		font-size: 16px;
+		font-size: 1.142857142857143em;
+	}
+
+	#profile-jumbo
+	{
+		padding: 40px 0;
+	}
+
+	#profile-jumbo h2
+	{
+		font-size: 1.8em;
+	}
+
+	#profile-jumbo p
+	{
+		font-size: 0.98em;
 	}
 }
 
 /*Landscape phones*/
 @media(max-width: 480px)
 {
-	.jumbotron h1
+	.masthead h1
 	{
 		font-size: 2em;
 	}
 
-	.jumbotron p, .bigbtn
+	.masthead p, .bigbtn
 	{
-		font-size: 14px;
+		font-size: 1em;
 	}
 
 	.marketing h1
 	{
-		font-size: 40px;
+		font-size: 2.857142857142857em;
 	}
 
 	.marketing-byline
 	{
-		font-size: 20px !important;
+		font-size: 1.428571428571429em !important;
+	}
+
+	#profile-jumbo h2
+	{
+		font-size: 1.6em;
 	}
 }
