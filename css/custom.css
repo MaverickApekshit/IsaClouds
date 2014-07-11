@@ -4,12 +4,36 @@ body
 {
 	position: relative;
 	background: url(../images/bg_body-noise.png);
+    /*background-color: #FFE6B0;*/
 }
 
 .custom-container /*Clear screen edges*/
 {
 	margin-right: 1em;
 	margin-left: 1em;
+}
+
+.navbar-inverse
+{
+	color: #fff;
+	background-image: none;
+	background-color: #313540;
+	border-color: #313540;
+}
+
+.navbar-brand
+{
+	color: #fff !important;
+}
+
+.brand-color1
+{
+	color: #E9405A;
+}
+
+.brand-color2
+{
+    color: #4AE9FF;
 }
 
 /* Faded out hr */
@@ -44,9 +68,13 @@ hr.soften1
 	margin-bottom: 40px !important;
 }
 
-.brand-color
+/* Home Jumbo
+-------------------------------------------------- */
+#home-jumbo
 {
-	color: #61c168;
+	color: #313540;
+	background-color: #FABA2D;
+	padding-bottom: 20px;
 }
 
 /* Masthead jumbotrons
@@ -149,12 +177,6 @@ hr.soften1
 	margin-top: 2em;
 }
 
-#social-buttons
-{
-	color: #fff;
-	padding-top: 1em;
-}
-
 #social-buttons span
 {
 	margin-left: 1em;
@@ -165,7 +187,7 @@ hr.soften1
 
 .marketing
 {
-	color: #5a5a5a;
+	color: #313540;
 }
 
 .marketing h1
@@ -179,15 +201,13 @@ hr.soften1
 
 .marketing h2
 {
-	font-weight: 200;
-	margin-bottom: 20px;
-	color: #5a5a5a;
+	color: #313540;
 }
 
 .marketing p
 {
 	font-size: 1.142857142857143em;
-	line-height: 1.5;
+    color: #313540;
 }
 
 .marketing .marketing-byline
@@ -199,26 +219,33 @@ hr.soften1
 	color: #999;
 }
 
-h2 a
+#services a div
 {
-	color: #5a5a5a;
+	padding: 1em;
+	border-radius: 1.2em;
 }
 
-h2 a:hover
+#services a:hover div
 {
-	color: #61c168;
+    color: #4AE9FF;
+	background-color: #E9405A;
+	box-shadow: 0 10px 30px rgba(0,0,0,.3), 0 -10px 30px rgba(0,0,0,.3);
+}
+
+#services a:hover
+{
 	text-decoration: none;
 }
 
-h2 a:active
+#services a:active
 {
-	color: #61c168;
 	text-decoration: none;
 }
+
 
 span.firstword
 {
-	border-bottom: 2px solid #B1EBB5;
+	border-bottom: 2px solid #4AE9FF;
 }
 
 .bordertop
@@ -249,25 +276,43 @@ span.firstword
 	padding-top: 1em;
 }
 
-.orange-building-bg
+/****************Carousel******************
+.carousel
 {
-	background: #ffa753 url(../images/skyline.png) repeat-x bottom;
+	height: 200px;
+	margin-bottom: 60px;
 }
+
+.carousel-caption
+{
+	z-index: 10;
+	
+}
+
+.carousel .item
+{
+	height: 200px;
+	background-color: #777;
+}*/
 
 /* Footer
 -------------------------------------------------- */
 
 footer h2, footer h3, footer h4
 {
-	color: #fff;
+	color: #B1938B;
 	font-weight: normal;
+}
+
+footer p
+{
+	color: #FFF;
 }
 
 footer .copyright
 {
 	border-bottom: 0px;
 	font-size: 0.8em;
-	padding-bottom: 40px;
 }
 
 footer ul
@@ -357,31 +402,31 @@ footer
 {
 	margin-top: 70px;
 	border-top: 1px solid #e5e5e5;
-	background: url('../images/bg_footer.png');
-	padding: 60px 0 0 0;
-	color: #919191;
+	background-color: #313540;
+	padding: 35px 0 10px 0;
 }
 
 footer a
 {
-	color: #fff;
+	color: #4AE9FF;
 }
 
 footer a:hover
 {
-	color: #61c168;
+	color: #E9405A;
+	text-decoration: none;
 }
 
 .footer-links li
 {
 	line-height: 32px;
 	font-size: 0.8571428571428571em;
-	border-bottom: 1px solid #232323;
+	border-bottom: 1px solid #313540;
 }
 
 .footer-links li:hover
 {
-	background: #1d1d1d;
+	background: #313540;
 }
 
 /* Services Pages
@@ -415,6 +460,45 @@ footer a:hover
 	line-height: 40px;
 	color: #999;
 }
+
+/* About Us
+-------------------------------------------------- */
+
+/*.smoky-bg
+{
+	background: rgba(255,255,255,0.75);
+	margin-top: 4em;
+	margin-left: -3em;
+	margin-right: -2em;
+	margin-bottom: 4em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+/*#timeline
+{
+	background:  url('../images/vertical-dotted.png') repeat-y scroll center center / 5px 12px #EFEFEF;
+}
+
+.timeline-year
+{
+	margin-bottom: 35px;
+	background-color: #7799B6;
+	color: #fff;
+	padding: 0px 15px;
+	display: inline-block;
+}
+
+.timeline-elements
+{
+	width: 60%;
+	border: 2px solid #CCC;
+	padding: 20px;
+	box-shadow: 0px 2px 14px -1px rgba(0, 0, 0, 0.2);
+	margin: 1em auto 2.5em;
+	background: #fff;
+	text-align: center;
+}*/
 
 .aboutUsDP
 {
@@ -490,7 +574,8 @@ address a:active
 
 #myTab a
 {
-	color: #61c168;
+	color: #E74C3C;
+	font-size: 1.3em;
 }
 
 /* Responsive
@@ -523,6 +608,7 @@ address a:active
 
 /* Tablet
 ------------------------- */
+
 @media (max-width: 767px)
 {
 	/* Widen masthead and social buttons to fill body padding */
