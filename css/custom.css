@@ -365,7 +365,7 @@ footer .copyright {
 #services-jumbo h1 {
     text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
     font-weight: bold;
-    margin: 60px 0;
+    margin-top: 50px;
 }
 #services-jumbo p {
     font-size: 1.4em;
@@ -406,6 +406,7 @@ footer .copyright {
 }
 /* About Us
 -------------------------------------------------- */
+
 .aboutUsDP {
     max-height: 18em;
     max-width: 18em;
