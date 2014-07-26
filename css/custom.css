@@ -7,7 +7,30 @@
     font-family: Adam;
     src: url(../fonts/ADAM.otf);
 }
+@font-face
 
+{
+    font-family: Farray;
+    src: url(../fonts/FARRAY.otf);
+}
+@font-face
+
+{
+    font-family: Axis;
+    src: url(../fonts/axis.otf);
+}
+@font-face
+
+{
+    font-family: Ridge-Regular;
+    src: url(../fonts/Ridge-Regular.otf);
+}
+@font-face
+
+{
+    font-family: Tracion;
+    src: url(../fonts/Tracion-Normal.ttf);
+}
 /* Body and structure
 -------------------------------------------------- */
 
@@ -24,7 +47,7 @@ body {
     margin-left: 1em;
 }
 .tpad {
-    margin-top: 2em;
+    margin-top: 1em;
 }
 .tmarg {
     margin-top: 1em;
@@ -58,31 +81,23 @@ hr.soften {
     height: 1px;
     margin: 60px 0;
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1), rgba(0, 0, 0, 0));
-    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1), rgba(0, 0, 0, 0));
-    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1), rgba(0, 0, 0, 0));
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1), rgba(0, 0, 0, 0));
     border: 0;
 }
 hr.soften1 {
     height: 1px;
     margin: 60px 0;
     background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1), rgba(255, 255, 255, 0));
-    background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1), rgba(255, 255, 255, 0));
-    background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1), rgba(255, 255, 255, 0));
-    background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1), rgba(255, 255, 255, 0));
     border: 0;
 }
 .copyhr {
     background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, .8), rgba(255, 255, 255, 0));
-    background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, .8), rgba(255, 255, 255, 0));
-    background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, .8), rgba(255, 255, 255, 0));
-    background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, .8), rgba(255, 255, 255, 0));
     margin-bottom: 40px !important;
 }
 /* Home Jumbotron
 -------------------------------------------------- */
 
 #home-jumbo {
+    width: 100%;
     color: #313540;
     background-color: #FABA2D;
     padding-top: 55px;
@@ -96,6 +111,7 @@ hr.soften1 {
 
 .masthead {
     background: url("../images/home-banner-bg.jpg") bottom center no-repeat fixed;
+    -webkit-background-size: cover;
     background-size: cover;
     position: relative;
     padding: 40px 0 80px;
@@ -103,7 +119,6 @@ hr.soften1 {
     color: #fff;
     text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
     -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
-    -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
     box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
 }
 .masthead h1 {
@@ -127,6 +142,7 @@ hr.soften1 {
 /* Custom Button */
 
 .masthead .bigbtn {
+    -webkit-box-shadow: inset 0 1px 0 #ffd265, 0 0 0 1px #912e01, 0 0 0 07px rgba(0, 0, 0, .1), 0 1px 4px rgba(0, 0, 0, .6);
     box-shadow: inset 0 1px 0 #ffd265, 0 0 0 1px #912e01, 0 0 0 07px rgba(0, 0, 0, .1), 0 1px 4px rgba(0, 0, 0, .6);
 }
 .bigbtn {
@@ -136,16 +152,11 @@ hr.soften1 {
     text-decoration: none;
     text-transform: uppercase;
     padding: .3em 1.4em;
-    -webkit-border-radius: 2.8em;
-    -moz-border-radius: 2.8em;
     -o-border-radius: 2.8em;
-    -ms-border-radius: 2.8em;
     border-radius: 2.8em;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(1%, rgb(255, 96, 43)), to(rgb(255, 148, 67)));
     background-image: linear-gradient(bottom, rgb(255, 96, 43) 1%, rgb(255, 148, 67) 100%);
-    background-image: -o-linear-gradient(bottom, rgb(255, 96, 43) 1%, rgb(255, 148, 67) 100%);
-    background-image: -moz-linear-gradient(bottom, rgb(255, 96, 43) 1%, rgb(255, 148, 67) 100%);
     background-image: -webkit-linear-gradient(bottom, rgb(255, 96, 43) 1%, rgb(255, 148, 67) 100%);
-    background-image: -ms-linear-gradient(bottom, rgb(255, 96, 43) 1%, rgb(255, 148, 67) 100%);
     font-weight: 700;
     font-style: normal;
     overflow: visible;
@@ -156,21 +167,17 @@ hr.soften1 {
     color: #fff;
     text-decoration: none;
     background-color: #ff831e;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(1%, rgb(255, 148, 67)), to(rgb(255, 96, 43)));
     background-image: linear-gradient(bottom, rgb(255, 148, 67) 1%, rgb(255, 96, 43) 100%);
-    background-image: -o-linear-gradient(bottom, rgb(255, 148, 67) 1%, rgb(255, 96, 43) 100%);
-    background-image: -moz-linear-gradient(bottom, rgb(255, 148, 67) 1%, rgb(255, 96, 43) 100%);
     background-image: -webkit-linear-gradient(bottom, rgb(255, 148, 67) 1%, rgb(255, 96, 43) 100%);
-    background-image: -ms-linear-gradient(bottom, rgb(255, 148, 67) 1%, rgb(255, 96, 43) 100%);
 }
 .bigbtn:active {
     color: #fff;
     text-decoration: none;
     background-color: #ff831e;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(1%, rgb(255, 148, 67)), to(rgb(255, 96, 43)));
     background-image: linear-gradient(bottom, rgb(255, 148, 67) 1%, rgb(255, 96, 43) 100%);
-    background-image: -o-linear-gradient(bottom, rgb(255, 148, 67) 1%, rgb(255, 96, 43) 100%);
-    background-image: -moz-linear-gradient(bottom, rgb(255, 148, 67) 1%, rgb(255, 96, 43) 100%);
     background-image: -webkit-linear-gradient(bottom, rgb(255, 148, 67) 1%, rgb(255, 96, 43) 100%);
-    background-image: -ms-linear-gradient(bottom, rgb(255, 148, 67) 1%, rgb(255, 96, 43) 100%);
 }
 /* Marketing section
 -------------------------------------------------- */
@@ -179,7 +186,6 @@ hr.soften1 {
     color: #313540;
 }
 .marketing h1 {
-    margin: 60px 0 10px;
     font-size: 4.285714285714286em;
     font-weight: 200;
     line-height: 1;
@@ -220,10 +226,23 @@ hr.soften1 {
 -------------------------------------------------- */
 
 .tile {
+    cursor: pointer;
     padding: 1em;
     border-radius: 1.2em;
 }
 div.tile:hover {
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, .3), 0 -10px 30px rgba(0, 0, 0, .3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .3), 0 -10px 30px rgba(0, 0, 0, .3);
+}
+div.blue-thumbnail {
+    cursor: pointer;
+    margin: 1em;
+    border-radius: 1.8em;
+    background-color: #4AE9FF;
+}
+div.blue-thumbnail:hover {
+    background-color: #E9405A;
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, .3), 0 -10px 30px rgba(0, 0, 0, .3);
     box-shadow: 0 10px 30px rgba(0, 0, 0, .3), 0 -10px 30px rgba(0, 0, 0, .3);
 }
 #services a:hover {
@@ -246,24 +265,36 @@ div.tile:hover {
 }
 .tilt {
     -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    -ms-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
 .tilt:hover {
     -webkit-transform: rotate(3deg);
-    -moz-transform: rotate(3deg);
     -ms-transform: rotate(3deg);
-    -o-transform: rotate(3deg);
     transform: rotate(3deg);
     -webkit-box-shadow: 0 0 40px rgba(255, 255, 255, .6), inset 0 0 40px rgba(255, 255, 255, 1);
-    -moz-box-shadow: 0 0 40px rgba(255, 255, 255, .6), inset 0 0 40px rgba(255, 255, 255, 1);
     box-shadow: 0 0 40px rgba(255, 255, 255, .6), inset 0 0 40px rgba(255, 255, 255, 1);
 }
 span.firstword {
     border-bottom: 2px solid #4AE9FF;
 }
+/****************Carousel******************
+.carousel
+{
+	height: 200px;
+	margin-bottom: 60px;
+}
+
+.carousel-caption
+{
+	z-index: 10;
+	
+}
+
+.carousel .item
+{
+	height: 200px;
+	background-color: #777;
+}*/
 
 /* Footer
 -------------------------------------------------- */
@@ -350,16 +381,12 @@ footer .copyright {
     border-bottom: 0px;
     font-size: 0.8em;
 }
-/* Services Pages
--------------------------------------------------- */
-
 /* Services Jumbotrons
 -------------------------------------------------- */
 
 #services-jumbo {
     color: #313540;
     -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
-    -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
     box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
 }
 #services-jumbo h1 {
@@ -385,6 +412,40 @@ footer .copyright {
 .visibleAnime {
     opacity: 1;
 }
+/* Contact Us Page
+-------------------------------------------------- 
+
+.form-control {
+    background: transparent;
+}
+div.form-group {
+    position: relative;
+    overflow: hidden;
+}
+form input,
+form textarea {
+    width: 100%;
+    border: 2px solid gray;
+    background: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 8px 12px;
+    outline: 0;
+}
+form input:valid,
+form textarea:valid {
+    background: white;
+}
+form input:focus,
+form textarea:focus {
+    border-color: #357EBD;
+}*/
+
+/* Services Pages
+-------------------------------------------------- */
+
 .list {
     padding-left: 2em;
 }
@@ -406,6 +467,42 @@ footer .copyright {
 }
 /* About Us
 -------------------------------------------------- */
+
+/*.smoky-bg
+{
+	background: rgba(255,255,255,0.75);
+	margin-top: 4em;
+	margin-left: -3em;
+	margin-right: -2em;
+	margin-bottom: 4em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+/*#timeline
+{
+	background:  url('../images/vertical-dotted.png') repeat-y scroll center center / 5px 12px #EFEFEF;
+}
+
+.timeline-year
+{
+	margin-bottom: 35px;
+	background-color: #7799B6;
+	color: #fff;
+	padding: 0px 15px;
+	display: inline-block;
+}
+
+.timeline-elements
+{
+	width: 60%;
+	border: 2px solid #CCC;
+	padding: 20px;
+	box-shadow: 0px 2px 14px -1px rgba(0, 0, 0, 0.2);
+	margin: 1em auto 2.5em;
+	background: #fff;
+	text-align: center;
+}*/
 
 .aboutUsDP {
     max-height: 18em;
