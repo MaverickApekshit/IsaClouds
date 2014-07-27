@@ -7,30 +7,6 @@
     font-family: Adam;
     src: url(../fonts/ADAM.otf);
 }
-@font-face
-
-{
-    font-family: Farray;
-    src: url(../fonts/FARRAY.otf);
-}
-@font-face
-
-{
-    font-family: Axis;
-    src: url(../fonts/axis.otf);
-}
-@font-face
-
-{
-    font-family: Ridge-Regular;
-    src: url(../fonts/Ridge-Regular.otf);
-}
-@font-face
-
-{
-    font-family: Tracion;
-    src: url(../fonts/Tracion-Normal.ttf);
-}
 /* Body and structure
 -------------------------------------------------- */
 
@@ -51,6 +27,21 @@ body {
 }
 .tmarg {
     margin-top: 1em;
+}
+.viewport-navbar-correction {
+    padding-top: 50px;
+    margin-top: -50px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+}
+a.no-dec {
+    color: #313540;
+}
+a.no-dec:hover {
+    text-decoration: none;
+}
+a.no-dec:active {
+    text-decoration: none;
 }
 /* Navbar
 -------------------------------------------------- */
@@ -96,14 +87,14 @@ hr.soften1 {
 /* Home Jumbotron
 -------------------------------------------------- */
 
-#home-jumbo {
+.home-jumbo {
     width: 100%;
     color: #313540;
-    background-color: #FABA2D;
+    background-color: #FCDF15;
     padding-top: 55px;
     padding-bottom: 25px;
 }
-#home-jumbo h1 {
+.home-jumbo h1 {
     font-size: 4em;
 }
 /* Masthead jumbotrons
@@ -245,12 +236,6 @@ div.blue-thumbnail:hover {
     -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, .3), 0 -10px 30px rgba(0, 0, 0, .3);
     box-shadow: 0 10px 30px rgba(0, 0, 0, .3), 0 -10px 30px rgba(0, 0, 0, .3);
 }
-#services a:hover {
-    text-decoration: none;
-}
-#services a:active {
-    text-decoration: none;
-}
 .pink-tile:hover {
     background-color: #E9405A;
 }
@@ -277,25 +262,6 @@ div.blue-thumbnail:hover {
 span.firstword {
     border-bottom: 2px solid #4AE9FF;
 }
-/****************Carousel******************
-.carousel
-{
-	height: 200px;
-	margin-bottom: 60px;
-}
-
-.carousel-caption
-{
-	z-index: 10;
-	
-}
-
-.carousel .item
-{
-	height: 200px;
-	background-color: #777;
-}*/
-
 /* Footer
 -------------------------------------------------- */
 
@@ -412,37 +378,6 @@ footer .copyright {
 .visibleAnime {
     opacity: 1;
 }
-/* Contact Us Page
--------------------------------------------------- 
-
-.form-control {
-    background: transparent;
-}
-div.form-group {
-    position: relative;
-    overflow: hidden;
-}
-form input,
-form textarea {
-    width: 100%;
-    border: 2px solid gray;
-    background: none;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    padding: 8px 12px;
-    outline: 0;
-}
-form input:valid,
-form textarea:valid {
-    background: white;
-}
-form input:focus,
-form textarea:focus {
-    border-color: #357EBD;
-}*/
-
 /* Services Pages
 -------------------------------------------------- */
 
@@ -467,43 +402,6 @@ form textarea:focus {
 }
 /* About Us
 -------------------------------------------------- */
-
-/*.smoky-bg
-{
-	background: rgba(255,255,255,0.75);
-	margin-top: 4em;
-	margin-left: -3em;
-	margin-right: -2em;
-	margin-bottom: 4em;
-	padding-top: 1em;
-	padding-bottom: 1em;
-}
-
-/*#timeline
-{
-	background:  url('../images/vertical-dotted.png') repeat-y scroll center center / 5px 12px #EFEFEF;
-}
-
-.timeline-year
-{
-	margin-bottom: 35px;
-	background-color: #7799B6;
-	color: #fff;
-	padding: 0px 15px;
-	display: inline-block;
-}
-
-.timeline-elements
-{
-	width: 60%;
-	border: 2px solid #CCC;
-	padding: 20px;
-	box-shadow: 0px 2px 14px -1px rgba(0, 0, 0, 0.2);
-	margin: 1em auto 2.5em;
-	background: #fff;
-	text-align: center;
-}*/
-
 .aboutUsDP {
     max-height: 18em;
     max-width: 18em;
@@ -568,7 +466,7 @@ address a:active {
         font-size: 1.285714285714286em;
         /*18px*/
     }
-    #home-jumbo h1 {
+    .home-jumbo h1 {
         font-size: 3em;
     }
     #services-jumbo h1 {
@@ -599,7 +497,7 @@ address a:active {
     .bigbtn {
         font-size: 1.142857142857143em;
     }
-    #home-jumbo h1,
+    .home-jumbo h1,
     #services-jumbo h1 {
         font-size: 2.5em;
     }
