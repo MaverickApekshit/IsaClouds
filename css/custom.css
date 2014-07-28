@@ -13,7 +13,6 @@
 body {
     position: relative;
     background: url(../images/bg_body-noise.png);
-    /*background-color: #FFE6B0;*/
 }
 .custom-container
 /*Clear screen edges*/
@@ -402,6 +401,7 @@ footer .copyright {
 }
 /* About Us
 -------------------------------------------------- */
+
 .aboutUsDP {
     max-height: 18em;
     max-width: 18em;
