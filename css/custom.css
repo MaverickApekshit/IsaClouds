@@ -7,6 +7,18 @@
     font-family: Adam;
     src: url(../fonts/ADAM.otf);
 }
+@font-face
+
+{
+    font-family: Tracion;
+    src: url(../fonts/QuireSansPro-ExtraLight.otf);
+}
+@font-face
+
+{
+    font-family: Brandon;
+    src: url(../fonts/brandon_light-webfont-3ee4c22dbc88a017b93999e685aca8bf.woff);
+}
 /* Body and structure
 -------------------------------------------------- */
 
@@ -14,12 +26,13 @@ body {
     position: relative;
     background: url(../images/bg_body-noise.png);
 }
-.custom-container
-/*Clear screen edges*/
-
-{
-    margin-right: 1em;
-    margin-left: 1em;
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Tracion;
+    font-weight: bolder;
 }
 .tpad {
     margin-top: 1em;
@@ -59,8 +72,11 @@ a.no-dec:active {
     font-weight: bolder;
     color: #4AE9FF;
 }
-.brand-color2 {
+.red-text {
     color: #E9405A;
+}
+.yellow-text {
+    color: #FCDF15;
 }
 #social-buttons span {
     margin-left: 1em;
@@ -90,11 +106,35 @@ hr.soften1 {
     width: 100%;
     color: #313540;
     background-color: #FCDF15;
-    padding-top: 55px;
-    padding-bottom: 25px;
+    /*background-color: #E9405A;*/
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 .home-jumbo h1 {
-    font-size: 4em;
+    margin-top: 150px;
+    margin-bottom: 60px;
+    font-family: Adam;
+    line-height: 1.2em;
+    font-size: 5em;
+}
+.home-jumbo p {
+    margin-bottom: 80px;
+    font-family: Tracion;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.1em;
+}
+.home-jumbo p.inst {
+    margin-bottom: 0;
+    padding-bottom: 7px;
+    font-size: 0.9em;
+    font-family: Brandon;
+}
+#down-arrow {
+    height: 50px;
+}
+.down-arrow-img {
+    background-color: #FCDF15;
 }
 /* Masthead jumbotrons
 -------------------------------------------------- */
@@ -224,17 +264,6 @@ div.tile:hover {
     -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, .3), 0 -10px 30px rgba(0, 0, 0, .3);
     box-shadow: 0 10px 30px rgba(0, 0, 0, .3), 0 -10px 30px rgba(0, 0, 0, .3);
 }
-div.blue-thumbnail {
-    cursor: pointer;
-    margin: 1em;
-    border-radius: 1.8em;
-    background-color: #4AE9FF;
-}
-div.blue-thumbnail:hover {
-    background-color: #E9405A;
-    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, .3), 0 -10px 30px rgba(0, 0, 0, .3);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .3), 0 -10px 30px rgba(0, 0, 0, .3);
-}
 .pink-tile:hover {
     background-color: #E9405A;
 }
@@ -246,6 +275,17 @@ div.blue-thumbnail:hover {
 }
 .cream-tile:hover {
     background-color: #FFE6B0;
+}
+div.blue-thumbnail {
+    cursor: pointer;
+    margin: 1em;
+    border-radius: 1.8em;
+    background-color: #4AE9FF;
+}
+div.blue-thumbnail:hover {
+    background-color: #E9405A;
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, .3), 0 -10px 30px rgba(0, 0, 0, .3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .3), 0 -10px 30px rgba(0, 0, 0, .3);
 }
 .tilt {
     -webkit-transition: all 0.3s ease-in;
@@ -261,6 +301,7 @@ div.blue-thumbnail:hover {
 span.firstword {
     border-bottom: 2px solid #4AE9FF;
 }
+
 /* Footer
 -------------------------------------------------- */
 
@@ -377,6 +418,7 @@ footer .copyright {
 .visibleAnime {
     opacity: 1;
 }
+
 /* Services Pages
 -------------------------------------------------- */
 
@@ -467,7 +509,13 @@ address a:active {
         /*18px*/
     }
     .home-jumbo h1 {
+        margin-top: 75px;
         font-size: 3em;
+        margin-bottom: 60px;
+    }
+    .home-jumbo p {
+        font-size: 0.9em;
+        margin-bottom: 50px;
     }
     #services-jumbo h1 {
         font-size: 3em;
@@ -499,7 +547,14 @@ address a:active {
     }
     .home-jumbo h1,
     #services-jumbo h1 {
+        margin-top: 50px;
+        margin-bottom: 40px;
         font-size: 2.5em;
+    }
+    .home-jumbo p {
+        padding-top: 5px;
+        font-size: 0.7em;
+        margin-bottom: 10px;
     }
     #services-jumbo p {
         font-size: 1.142857142857143em;
@@ -512,6 +567,9 @@ address a:active {
     }
     #profile-jumbo p {
         font-size: 0.98em;
+    }
+    .tile {
+        padding: 0.2em;
     }
 }
 /*Landscape phones*/
