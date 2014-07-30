@@ -1,10 +1,5 @@
 $(document).ready(function() {
 
-    //Remove tilt in mobile
-    if ($(window).width() < 768) {
-        $('div.tilt').removeClass("tilt");
-    }
-
     //Animations (only for desktops)
     if ($(window).width() >= 992) {
 
@@ -13,6 +8,14 @@ $(document).ready(function() {
             var animation = 'animated ' + $(this).data('action');
             $(this).viewportChecker({
                 classToAdd: animation
+            });
+        });
+
+        //On Scroll
+        $('.animateOnScroll').each(function() {
+            var animation = 'visibleAnime animated ' + this.getAttribute("data-action");
+            $(this).addClass("hiddenAnime").viewportChecker({
+                classToAdd: animation,
             });
         });
     }
