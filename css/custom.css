@@ -7,18 +7,21 @@
     font-family: Adam;
     src: url(../fonts/ADAM.otf);
 }
+
 @font-face
 
 {
     font-family: QuireSans;
     src: url(../fonts/QuireSansPro-ExtraLight.otf);
 }
+
 @font-face
 
 {
     font-family: Brandon;
     src: url(../fonts/brandon_light-webfont-3ee4c22dbc88a017b93999e685aca8bf.woff);
 }
+
 /* Body and structure
 -------------------------------------------------- */
 
@@ -42,10 +45,10 @@ h6 {
     margin-left: 1em;
 }
 .tpad {
-    margin-top: 1em;
+    margin-top: 0.1em;
 }
 .tmarg {
-    margin-top: 1em;
+    margin-top: 1.5em;
 }
 .viewport-navbar-correction {
     padding-top: 50px;
@@ -113,7 +116,6 @@ hr.soften1 {
     width: 100%;
     color: #313540;
     background-color: #FCDF15;
-    /*background-color: #E9405A;*/
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -123,6 +125,11 @@ hr.soften1 {
     font-family: QuireSans;
     line-height: 1.2em;
     font-size: 5em;
+}
+.home-jumbo h2 {
+    margin-top: 1.5em;
+    padding-bottom: 1em;
+    font-weight: normal;
 }
 .home-jumbo p {
     margin-bottom: 100px;
@@ -271,28 +278,18 @@ span.firstword {
     border-radius: 1.2em;
 }
 
-.pink-tile:hover {
-    background-color: #E9405A;
-}
 .blue-tile:hover {
     background-color: #4AE9FF;
 }
 .blue-tile:hover span.firstword {
     border-bottom: 2px solid #E9405A;
 }
-.cream-tile:hover {
-    background-color: #FFE6B0;
-}
+
 div.blue-thumbnail {
     cursor: pointer;
     margin: 1em;
     border-radius: 1.8em;
     background-color: #4AE9FF;
-}
-div.blue-thumbnail:hover {
-    background-color: #E9405A;
-    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, .3), 0 -10px 30px rgba(0, 0, 0, .3);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .3), 0 -10px 30px rgba(0, 0, 0, .3);
 }
 
 /* Animations
@@ -318,55 +315,6 @@ div.blue-thumbnail:hover {
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
 }
-/* Float Shadow */
-
-.float-shadow {
-    display: inline-block;
-    position: relative;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: transform;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.float-shadow:before {
-    pointer-events: none;
-    position: absolute;
-    z-index: -1;
-    content: '';
-    top: 100%;
-    left: 5%;
-    height: 10px;
-    width: 90%;
-    opacity: 0;
-    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-    /* W3C */
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: -webkit-transform, opacity;
-    transition-property: transform, opacity;
-}
-.float-shadow:hover,
-.float-shadow:focus,
-.float-shadow:active {
-    -webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    transform: translateY(-5px);
-    /* move the element up by 5px */
-}
-.float-shadow:hover:before,
-.float-shadow:focus:before,
-.float-shadow:active:before {
-    opacity: 1;
-    -webkit-transform: translateY(5px);
-    -ms-transform: translateY(5px);
-    transform: translateY(5px);
-    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
-}
 /* Glow */
 
 .glow {
@@ -383,7 +331,7 @@ div.blue-thumbnail:hover {
 .glow:hover,
 .glow:focus,
 .glow:active {
-    -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
 }
 
@@ -391,7 +339,7 @@ div.blue-thumbnail:hover {
 -------------------------------------------------- */
 
 footer {
-    margin-top: 70px;
+    margin-top: 2em;
     border-top: 1px solid #e5e5e5;
     background-color: #313540;
     padding: 35px 0 10px 0;
@@ -456,18 +404,7 @@ footer p {
 .footer-social-icons #facebook-icon-footer span:hover {
     background-color: #3b5998;
 }
-#github-icon-footer {
-    color: #D9D9D9;
-}
-.footer-social-icons #github-icon-footer span:hover {
-    background-color: #333;
-}
-#stumble-icon-footer {
-    color: #313540;
-}
-.footer-social-icons #stumble-icon-footer span:hover {
-    background-color: #EB4823;
-}
+
 footer .copyright {
     border-bottom: 0px;
     font-size: 0.8em;
@@ -502,6 +439,10 @@ footer .copyright {
 }
 .visibleAnime {
     opacity: 1;
+}
+#other-interest {
+    margin-top: 1em;
+    border-radius: 1.8em;
 }
 
 /* Services Pages
@@ -598,6 +539,9 @@ address a:active {
         font-size: 3em;
         margin-bottom: 60px;
     }
+    .home-jumbo h2 {
+        font-size: 1.6em;
+    }
     .home-jumbo p {
         font-size: 0.9em;
         margin-bottom: 50px;
@@ -619,6 +563,9 @@ address a:active {
 ------------------------- */
 
 @media (max-width: 767px) {
+    .tpad {
+        margin-top: 1em;
+    }
     .custom-container {
         margin-left: 0.5em;
         margin-right: 0.5em;
@@ -639,6 +586,9 @@ address a:active {
         margin-top: 45px;
         margin-bottom: 20px;
         font-size: 3em;
+    }
+    .home-jumbo h2 {
+        font-size: 1.5em;
     }
     .home-jumbo p {
         padding-top: 5px;
@@ -661,6 +611,13 @@ address a:active {
 /*Landscape phones*/
 
 @media(max-width: 480px) {
+    .tpad {
+        margin-top: 1em;
+    }
+    .home-jumbo h2 {
+        font-size: 1.3em;
+        line-height: 1.2em;
+    }
     .masthead h1 {
         font-size: 2em;
     }
@@ -668,7 +625,6 @@ address a:active {
     .bigbtn {
         font-size: 1em;
     }
-    #services-jumbo h1,
     #services-jumbo h1 {
         font-size: 2em;
     }
