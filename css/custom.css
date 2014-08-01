@@ -48,7 +48,7 @@ h6 {
     margin-top: 0.1em;
 }
 .tmarg {
-    margin-top: 1.5em;
+    margin-top: 2%;
 }
 .viewport-navbar-correction {
     padding-top: 50px;
@@ -564,7 +564,7 @@ address a:active {
 
 @media (max-width: 767px) {
     .tpad {
-        margin-top: 1em;
+        margin-top: 2em;
     }
     .custom-container {
         margin-left: 0.5em;
@@ -615,6 +615,7 @@ address a:active {
         margin-top: 1em;
     }
     .home-jumbo h2 {
+        margin-top: 17%;
         font-size: 1.3em;
         line-height: 1.2em;
     }
