@@ -1,41 +1,16 @@
-/* Fonts
--------------------------------------------------- */
-
-@font-face
-
-{
-    font-family: Adam;
-    src: url(../fonts/ADAM.otf);
-}
-
-@font-face
-
-{
-    font-family: QuireSans;
-    src: url(../fonts/QuireSansPro-ExtraLight.otf);
-}
-
-@font-face
-
-{
-    font-family: Brandon;
-    src: url(../fonts/brandon_light-webfont-3ee4c22dbc88a017b93999e685aca8bf.woff);
-}
-
 /* Body and structure
 -------------------------------------------------- */
 
-body {
-    position: relative;
-    background: url(../images/bg_body-noise.png);
-}
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: QuireSans;
+    font-family: 'Hind', sans-serif;
     font-weight: bolder;
+}
+p {
+    font-family: 'Ek Mukta', sans-serif;
 }
 .custom-container
 /*Clear screen edges*/
@@ -69,13 +44,12 @@ a.no-dec:active {
 -------------------------------------------------- */
 
 .navbar-inverse {
-    color: #fff;
     background-image: none;
     background-color: #313540;
     border-color: #313540;
 }
-.navbar-brand {
-    font-family: Adam;
+.text-logo {
+    font-family: 'Kalam', cursive;
     color: #fff !important;
 }
 .brand-color1 {
@@ -85,20 +59,7 @@ a.no-dec:active {
 .red-text {
     color: #E9405A;
 }
-.yellow-text {
-    color: #FCDF15;
-}
-#social-buttons span {
-    margin-left: 1em;
-}
-/* Faded out hr */
 
-hr.soften {
-    height: 1px;
-    margin: 60px 0;
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1), rgba(0, 0, 0, 0));
-    border: 0;
-}
 hr.soften1 {
     height: 1px;
     margin: 60px 0;
@@ -116,15 +77,16 @@ hr.soften1 {
     width: 100%;
     color: #313540;
     background-color: #FCDF15;
-    margin-bottom: 0;
     padding-bottom: 0;
+    margin-bottom: 4%;
 }
 .home-jumbo h1 {
-    margin-top: 175px;
-    margin-bottom: 100px;
-    font-family: QuireSans;
+    margin-top: 150px;
+    margin-bottom: 120px;
+    font-family: 'Hind', sans-serif;
     line-height: 1.2em;
     font-size: 5em;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
 }
 .home-jumbo h2 {
     margin-top: 1.5em;
@@ -132,97 +94,16 @@ hr.soften1 {
     font-weight: normal;
 }
 .home-jumbo p {
-    margin-bottom: 100px;
-    font-family: QuireSans;
-    font-size: 1em;
+    margin-bottom: 50px;
+    font-family: 'Ek Mukta', sans-serif;
+    font-size: 1.1em;
+}
+
+h2.down-arrow {
+    padding-bottom: 2%;
     font-weight: normal;
 }
-.home-jumbo p.inst {
-    margin-bottom: 0;
-    padding-bottom: 7px;
-    font-size: 0.9em;
-    font-family: Brandon;
-}
-#down-arrow {
-    height: 60px;
-}
-.down-arrow-img {
-    background-color: #FCDF15;
-    height: 30px;
-}
-/* Masthead jumbotrons
--------------------------------------------------- */
 
-.masthead {
-    background: url("../images/home-banner-bg.jpg") bottom center no-repeat fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
-    position: relative;
-    padding: 40px 0 80px;
-    margin-bottom: 0;
-    color: #fff;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
-    -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
-    box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
-}
-.masthead h1 {
-    font-size: 4em;
-    font-weight: bold;
-    letter-spacing: -1px;
-    line-height: 1.1em;
-    margin: 60px 0;
-    text-shadow: 0 1px 4px #000000;
-}
-.masthead h2 {
-    font-weight: bold;
-    text-shadow: 0 1px 4px #000000;
-}
-.masthead p {
-    font-size: 1.4em;
-    font-weight: normal;
-    line-height: 1.4em;
-    margin-bottom: 60px;
-}
-/* Custom Button */
-
-.masthead .bigbtn {
-    -webkit-box-shadow: inset 0 1px 0 #ffd265, 0 0 0 1px #912e01, 0 0 0 07px rgba(0, 0, 0, .1), 0 1px 4px rgba(0, 0, 0, .6);
-    box-shadow: inset 0 1px 0 #ffd265, 0 0 0 1px #912e01, 0 0 0 07px rgba(0, 0, 0, .1), 0 1px 4px rgba(0, 0, 0, .6);
-}
-.bigbtn {
-    color: #fff;
-    text-shadow: 0 1px 0 #912e01;
-    background-color: #d8c431;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: .3em 1.4em;
-    -o-border-radius: 2.8em;
-    border-radius: 2.8em;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(1%, rgb(255, 96, 43)), to(rgb(255, 148, 67)));
-    background-image: linear-gradient(bottom, rgb(255, 96, 43) 1%, rgb(255, 148, 67) 100%);
-    background-image: -webkit-linear-gradient(bottom, rgb(255, 96, 43) 1%, rgb(255, 148, 67) 100%);
-    font-weight: 700;
-    font-style: normal;
-    overflow: visible;
-    border: none;
-    font-size: 1.714285714285714em;
-}
-.bigbtn:hover {
-    color: #fff;
-    text-decoration: none;
-    background-color: #ff831e;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(1%, rgb(255, 148, 67)), to(rgb(255, 96, 43)));
-    background-image: linear-gradient(bottom, rgb(255, 148, 67) 1%, rgb(255, 96, 43) 100%);
-    background-image: -webkit-linear-gradient(bottom, rgb(255, 148, 67) 1%, rgb(255, 96, 43) 100%);
-}
-.bigbtn:active {
-    color: #fff;
-    text-decoration: none;
-    background-color: #ff831e;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(1%, rgb(255, 148, 67)), to(rgb(255, 96, 43)));
-    background-image: linear-gradient(bottom, rgb(255, 148, 67) 1%, rgb(255, 96, 43) 100%);
-    background-image: -webkit-linear-gradient(bottom, rgb(255, 148, 67) 1%, rgb(255, 96, 43) 100%);
-}
 /* Marketing section
 -------------------------------------------------- */
 
@@ -242,21 +123,7 @@ hr.soften1 {
     font-size: 1.142857142857143em;
     color: #313540;
 }
-.marketing .marketing-byline {
-    margin-bottom: 40px;
-    font-size: 2.0em;
-    font-weight: 30.0em;
-    line-height: 25px;
-    color: #999;
-}
-.bordertop {
-    border-top: 1px solid #EEE;
-    margin-top: 20px;
-    padding-top: 20px;
-}
-.tech-spec-img {
-    max-height: 250px;
-}
+
 #sf-logo {
     padding: 0 3em 0 0;
 }
@@ -267,33 +134,33 @@ hr.soften1 {
     padding-top: 1em;
 }
 span.firstword {
-    border-bottom: 2px solid #4AE9FF;
+    border-bottom: 2px solid #E9405A;
 }
 /* Tiles
 -------------------------------------------------- */
 
 .tile {
     cursor: pointer;
-    padding: 1em;
-    border-radius: 1.2em;
-}
-
-.blue-tile:hover {
-    background-color: #4AE9FF;
-}
-.blue-tile:hover span.firstword {
-    border-bottom: 2px solid #E9405A;
-}
-
-div.blue-thumbnail {
-    cursor: pointer;
-    margin: 1em;
+    margin: 2%;
+    padding: 3%;
     border-radius: 1.8em;
+}
+.tile-blue {
     background-color: #4AE9FF;
+}
+.tile-inactive {
+    background-color: #F0F0F0;
 }
 
 /* Animations
 -------------------------------------------------- */
+
+.hiddenAnime {
+    opacity: 0;
+}
+.visibleAnime {
+    opacity: 1;
+}
 
 /* Float */
 
@@ -334,6 +201,58 @@ div.blue-thumbnail {
     -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
 }
+/* Hang */
+
+@-webkit-keyframes hang {
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    100% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+}
+@keyframes hang {
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    100% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+}
+.hang {
+    display: inline-block;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hang:hover,
+.hang:focus,
+.hang:active {
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+    -webkit-animation-name: hang;
+    animation-name: hang;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
 
 /* Footer
 -------------------------------------------------- */
@@ -370,155 +289,38 @@ footer a:hover {
 footer p {
     color: #FFF;
 }
-.footer-social-icons span {
-    margin: 0.15em;
-    padding: 0.3em;
-    font-size: 2em;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 1em;
-}
-#linkedin-icon-footer {
-    color: #313540;
-}
-.footer-social-icons #linkedin-icon-footer span:hover {
-    background-color: #007bb6;
-}
-#googleplus-icon-footer {
-    color: #313540;
-}
-.footer-social-icons #googleplus-icon-footer span:hover {
-    background-color: #dd4b39;
-}
-#twitter-icon-footer {
-    color: #313540;
-}
-.footer-social-icons #twitter-icon-footer span:hover {
-    background-color: #00aced;
-}
-#facebook-icon-footer {
-    color: #313540;
-}
-.footer-social-icons #facebook-icon-footer span {
-    border-radius: 8em !important;
-}
-.footer-social-icons #facebook-icon-footer span:hover {
-    background-color: #3b5998;
-}
 
 footer .copyright {
     border-bottom: 0px;
     font-size: 0.8em;
 }
-/* Services Jumbotrons
--------------------------------------------------- */
 
-#services-jumbo {
-    color: #313540;
-    -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
-    box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
-}
-#services-jumbo h1 {
-    text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
-    font-weight: bold;
-    margin-top: 50px;
-}
-#services-jumbo p {
-    font-size: 1.4em;
-    font-weight: normal;
-    line-height: 1.4em;
-    margin-bottom: 60px;
-}
-.pink-jumbo {
-    background-color: #E9405A;
-}
-.blue-jumbo {
-    background-color: #4AE9FF
-}
-.hiddenAnime {
-    opacity: 0;
-}
-.visibleAnime {
-    opacity: 1;
-}
 #other-interest {
     margin-top: 1em;
     border-radius: 1.8em;
 }
 
-/* Services Pages
+/* Why Us Page
 -------------------------------------------------- */
 
-.list {
-    padding-left: 2em;
+.why-jumbo {
+    color: #313540;
+    background-color: #FCDF15;
+    margin-bottom: 0;
 }
-.list span {
-    margin-right: 1em;
+.why-jumbo h1 {
+    margin-top: 4%;
+    font-family: QuireSans;
+    font-size: 5em;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
 }
-#page_heading {
-    padding-top: 50px;
+.grey-bg {
+    background-color: #F0F0F0;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
 }
-.button-padding {
-    margin-bottom: 60px;
-}
-#partner h2 {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    margin-bottom: 40px;
-    line-height: 40px;
-    color: #999;
-}
-/* About Us
--------------------------------------------------- */
 
-.aboutUsDP {
-    max-height: 18em;
-    max-width: 18em;
-}
-.social-icons span {
-    margin: 0.15em;
-    font-size: 2em;
-}
-#linkedin-icon {
-    color: #007bb6;
-}
-#googleplus-icon {
-    color: #dd4b39;
-}
-#twitter-icon {
-    color: #00aced;
-}
-#facebook-icon {
-    color: #3b5998;
-}
-#github-icon {
-    color: #333;
-}
-#stumble-icon {
-    color: #EB4823;
-}
-/* Profile
--------------------------------------------------- */
-
-#profile-jumbo h2 {
-    font-size: 2.5em;
-    letter-spacing: -1px;
-}
-#profile-jumbo p {
-    font-size: 1.1em;
-}
-address a {
-    color: #333;
-}
-address a:hover {
-    text-decoration: none;
-}
-address a:active {
-    text-decoration: none;
-}
-#myTab a {
-    color: #E74C3C;
-    font-size: 1.3em;
-}
 /* Responsive
 -------------------------------------------------- */
 
@@ -526,14 +328,6 @@ address a:active {
 ------------------------- */
 
 @media (min-width: 768px) and (max-width: 980px) {
-    .masthead h1 {
-        font-size: 3em;
-    }
-    .masthead p,
-    .bigbtn {
-        font-size: 1.285714285714286em;
-        /*18px*/
-    }
     .home-jumbo h1 {
         margin-top: 75px;
         font-size: 3em;
@@ -546,18 +340,6 @@ address a:active {
         font-size: 0.9em;
         margin-bottom: 50px;
     }
-    #services-jumbo h1 {
-        font-size: 3em;
-    }
-    #services-jumbo p {
-        font-size: 1.285714285714286em;
-    }
-    #profile-jumbo h2 {
-        font-size: 2em;
-    }
-    #profile-jumbo p {
-        font-size: 1em;
-    }
 }
 /* Tablet
 ------------------------- */
@@ -569,17 +351,6 @@ address a:active {
     .custom-container {
         margin-left: 0.5em;
         margin-right: 0.5em;
-    }
-    /* Widen masthead and social buttons to fill body padding */
-    .masthead {
-        padding: 40px 0;
-    }
-    .masthead h1 {
-        font-size: 2.5em;
-    }
-    .masthead p,
-    .bigbtn {
-        font-size: 1.142857142857143em;
     }
     .home-jumbo h1,
     #services-jumbo h1 {
@@ -595,18 +366,6 @@ address a:active {
         font-size: 0.9em;
         margin-bottom: 10px;
     }
-    #services-jumbo p {
-        font-size: 1.142857142857143em;
-    }
-    #profile-jumbo {
-        padding: 40px 0;
-    }
-    #profile-jumbo h2 {
-        font-size: 1.8em;
-    }
-    #profile-jumbo p {
-        font-size: 0.98em;
-    }
 }
 /*Landscape phones*/
 
@@ -619,19 +378,7 @@ address a:active {
         font-size: 1.3em;
         line-height: 1.2em;
     }
-    .masthead h1 {
-        font-size: 2em;
-    }
-    .masthead p,
-    .bigbtn {
-        font-size: 1em;
-    }
-    #services-jumbo h1 {
-        font-size: 2em;
-    }
-    #services-jumbo p {
-        font-size: 1em;
-    }
+
     .marketing h1 {
         font-size: 2.857142857142857em;
     }
@@ -640,11 +387,5 @@ address a:active {
     }
     .marketing p {
         font-size: 1em;
-    }
-    .marketing-byline {
-        font-size: 1.428571428571429em !important;
-    }
-    #profile-jumbo h2 {
-        font-size: 1.6em;
     }
 }

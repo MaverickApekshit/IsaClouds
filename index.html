@@ -14,11 +14,13 @@
 
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
     <!-- 3rd Party CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Kalam' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ek+Mukta' rel='stylesheet' type='text/css'>
 
     <!--Custom CSS-->
     <link rel="stylesheet" href="css/custom.css">
@@ -36,31 +38,13 @@
 <body>
     <!--navbar-->
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <a class="navbar-brand" href="index.html"><span class="brand-color1">ISA</span> <span class="red-text">Clouds</span></a>
+                <a class="navbar-brand" href="index.html"><span class="text-logo"><span class="brand-color1">ISA</span> <span class="red-text">Clouds</span></span> <sub>(Beta)</sub></a>
             </div>
-
-            <div class="collapse navbar-collapse">
-                <p class="navbar-text navbar-right" id="social-buttons">
-                    <a href="#" class="navbar-link"><span class="fa fa-linkedin"></span></a>
-                    <a href="#" class="navbar-link"><span class="fa fa-twitter"></span></a>
-                    <a href="#" class="navbar-link"><span class="fa fa-google-plus"></span></a>
-                    <a href="#" class="navbar-link"><span class="fa fa-facebook"></span></a>
-                </p>
-            </div>
-            <!-- /.nav-collapse-->
         </div>
-    </div>
-    <!-- /.navbar-->
+    </nav>
 
     <!-- Jumbotron -->
 
@@ -68,14 +52,11 @@
         <div class="custom-container">
             <h1>How Can <span class="red-text">WE</span> Partner In <span class="red-text">Your SUCCESS</span>?</h1>
             <p class="text-justify">We prefer to provide information on our website, specific to your need. Just to avoid overwhelming and confusing our visitors with pages and pages of content on ISA Clouds website. We sincerely hope that you may appreciate the approach with which we aspire to exactly align our information download based on the understanding of your need. You can select and click on any of the following topic to make us little more aware of your need.</p>
-            <p class="inst">Scroll Down to Get Started!</p>
-        </div>
-    </div>
 
-    <div id="down-arrow" class="text-center">
-        <a href="#services">
-            <img class="down-arrow-img" src="images/down-arrow.png">
-        </a>
+            <h2 class="down-arrow">
+               <a class="no-dec hang" href="#services"><span class="fa fa-angle-double-down"></span></a>
+            </h2>
+        </div>
     </div>
 
     <!-- Services -->
@@ -83,8 +64,8 @@
         <div class="row text-center">
             <div class="col-sm-6">
                 <a href="cloudComputingServices.html" class="no-dec">
-                    <div class="tile blue-thumbnail float glow animateOnScroll" data-action="zoomIn">
-                        <h2><span class="glyphicon glyphicon-cloud-download"></span><span class="firstword"> Cloud Computing</span> Consulting</h2>
+                    <div class="tile tile-blue float glow animateOnScroll" data-action="zoomIn">
+                        <h2><span class="glyphicon glyphicon-cloud-download"></span> Cloud Computing Consulting</h2>
 
                         <p class="text-justify">If you are interested to know about the benefits of Cloud Computing, <span class="red-text"><b>or</b></span> you are interested to know about our Cloud Readiness Assessment Service, <span class="red-text"><b>or</b></span> you can be interested to partner with us for the success of your cloud roadmap, we welcome your visit…</p>
                     </div>
@@ -93,8 +74,8 @@
 
             <div class="col-sm-6">
                 <a href="salesforceServices.html" class="no-dec">
-                    <div class="tile blue-thumbnail float glow animateOnScroll" data-action="zoomIn">
-                        <h2><span class="glyphicon glyphicon-cloud"></span><span class="firstword"> Salesforce.com</span> Services</h2>
+                    <div class="tile tile-blue float glow animateOnScroll" data-action="zoomIn">
+                        <h2><span class="glyphicon glyphicon-cloud"></span> Salesforce.com Services</h2>
 
                         <p class="text-justify">If you are interested to know about our Specialized Salesforce.com Services, <span class="red-text"><b>or</b></span> your Salesforce.com implementation needs enhancements, extensions and/or integrations, <span class="red-text"><b>or</b></span> you can be interested to partner with us for force.com project/s, <span class="red-text"><b>or</b></span> APPEXCHANGE product development, product maintenance or product support, we welcome your visit…</p>
                     </div>
@@ -104,33 +85,27 @@
 
         <div class="row text-center">
             <div class="col-sm-6">
-                <a href="crmServices.html" class="no-dec">
-                    <div class="tile blue-thumbnail float glow animateOnScroll" data-action="zoomIn">
-                        <h2><span class="glyphicon glyphicon-comment"></span><span class="firstword">  CRM</span> Consulting</h2>
+                <div class="tile tile-inactive animateOnScroll" data-action="zoomIn" data-toggle="tooltip" data-placement="top" title="This section is currently under construction. Please check back later.">
+                    <h2><span class="fa fa-users"></span> CRM Consulting</h2>
 
-                        <p class="text-justify">If you are planning a new CRM Initiative, <span class="red-text"><b>or</b></span> you are interested in rejuvenating your CRM implementation, <span class="red-text"><b>or</b></span> you are wondering which CRM product to implement or switch over to, we welcome your visit…</p>
-                    </div>
-                </a>
+                    <p class="text-justify">If you are planning a new CRM Initiative, <span class="red-text"><b>or</b></span> you are interested in rejuvenating your CRM implementation, <span class="red-text"><b>or</b></span> you are wondering which CRM product to implement or switch over to, we welcome your visit…</p>
+                </div>
             </div>
 
             <div class="col-sm-6">
-                <a href="mobileComputingServices.html" class="no-dec">
-                    <div class="blue-thumbnail tile float glow animateOnScroll" data-action="zoomIn">
-                        <h2><span class="glyphicon glyphicon-phone"></span><span class="firstword">  Mobile</span> Computing</h2>
+                <div class="tile tile-inactive animateOnScroll" data-action="zoomIn" data-toggle="tooltip" data-placement="top" title="This section is currently under construction. Please check back later.">
+                    <h2><span class="glyphicon glyphicon-phone"></span>  Mobile Computing</h2>
 
-                        <p class="text-justify">If you are planning to enable any of existing systems for mobile use, <span class="red-text"><b>or</b></span> you are planning to develop or implementation of new mobile systems, we welcome your visit…
-                        </p>
-                    </div>
-                </a>
+                    <p class="text-justify">If you are planning to enable any of existing systems for mobile use, <span class="red-text"><b>or</b></span> you are planning to develop or implementation of new mobile systems, we welcome your visit…
+                    </p>
+                </div>
             </div>
         </div>
-        <a href="ecommerceServices.html" class="no-dec">
-            <div class="blue-thumbnail tile float glow animateOnScroll" data-action="zoomIn">
-                <h2><span class="glyphicon glyphicon-euro"></span><span class="firstword">  E-commerce</span> Services</h2>
+        <div class="tile tile-inactive animateOnScroll" data-action="zoomIn" data-toggle="tooltip" data-placement="top" title="This section is currently under construction. Please check back later.">
+            <h2><span class="glyphicon glyphicon-euro"></span> E-commerce Services</h2>
 
-                <p class="text-justify">If are planning to setup a new e-commerce portal, <span class="red-text"><b>or</b></span> you can be interested to partner with us for existing e-commerce portal’s extension, enhancement or integrations, <span class="red-text"><b>or</b></span> your can be interested to partner with us for e-commerce support services, we welcome your visit…</p>
-            </div>
-        </a>
+            <p class="text-justify">If are planning to setup a new e-commerce portal, <span class="red-text"><b>or</b></span> you can be interested to partner with us for existing e-commerce portal’s extension, enhancement or integrations, <span class="red-text"><b>or</b></span> your can be interested to partner with us for e-commerce support services, we welcome your visit…</p>
+        </div>
     </div>
 
     <!--Footer -->
@@ -142,13 +117,6 @@
             <p>ISA Clouds' global industry experience better equips us to deliver both the strategic blueprint and the technical expertise customers require from a consulting team.</p>
 
             <a href="why_isa.html" class="btn btn-sm btn-info" role="button">Learn more <span class="glyphicon glyphicon-circle-arrow-right"></span></a>
-
-            <p class="footer-social-icons clearfix tpad">
-                <a id="linkedin-icon-footer" target="_blank" href="#"><span class="fa fa-linkedin"></span></a>
-
-                <a id="googleplus-icon-footer" target="_blank" href="#"><span class="fa fa-google-plus"></span></a>
-                <a id="twitter-icon-footer" target="_blank" href="#"><span class="fa fa-twitter"></span></a>
-            </p>
 
             <hr class="soften1 copyhr" />
 
@@ -166,6 +134,12 @@
 
     <!--Bootstrap JS-->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $("[data-toggle='tooltip']").tooltip();
+        });
+    </script>
 
     <!-- 3rd Party JS -->
     <script src="js/viewportchecker.js"></script>
