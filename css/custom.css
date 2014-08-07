@@ -1,6 +1,9 @@
 /* Body and structure
 -------------------------------------------------- */
 
+body {
+    color: #313540;
+}
 h2,
 h3,
 h4,
@@ -92,6 +95,7 @@ hr.soften1 {
     margin-top: 1.5em;
     padding-bottom: 1em;
     font-weight: normal;
+    line-height: 1.2em;
 }
 .home-jumbo p {
     margin-bottom: 50px;
@@ -104,38 +108,6 @@ h2.down-arrow {
     font-weight: normal;
 }
 
-/* Marketing section
--------------------------------------------------- */
-
-.marketing {
-    color: #313540;
-}
-.marketing h1 {
-    font-size: 4.285714285714286em;
-    font-weight: 200;
-    line-height: 1;
-    letter-spacing: -1px;
-}
-.marketing h2 {
-    color: #313540;
-}
-.marketing p {
-    font-size: 1.142857142857143em;
-    color: #313540;
-}
-
-#sf-logo {
-    padding: 0 3em 0 0;
-}
-#veeva-logo {
-    padding-top: 2em;
-}
-#heroku-logo {
-    padding-top: 1em;
-}
-span.firstword {
-    border-bottom: 2px solid #E9405A;
-}
 /* Tiles
 -------------------------------------------------- */
 
@@ -161,7 +133,6 @@ span.firstword {
 .visibleAnime {
     opacity: 1;
 }
-
 /* Float */
 
 .float {
@@ -294,11 +265,27 @@ footer .copyright {
     border-bottom: 0px;
     font-size: 0.8em;
 }
+/* Services
+-------------------------------------------------- */
 
+.tile h1 {
+    font-size: 4.285714285714286em;
+}
+p.icon-tile {
+    font-size: 1.142857142857143em;
+}
 #other-interest {
     margin-top: 1em;
     border-radius: 1.8em;
 }
+/* Contact Form
+--------------------------------------------------*/
+
+#contactForm p {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 
 /* Why Us Page
 -------------------------------------------------- */
@@ -319,6 +306,19 @@ footer .copyright {
     padding-top: 2%;
     padding-bottom: 1%;
     margin-bottom: 2%;
+}
+
+#sf-logo {
+    padding: 0 3em 0 0;
+}
+#veeva-logo {
+    padding-top: 2em;
+}
+#heroku-logo {
+    padding-top: 1em;
+}
+span.firstword {
+    border-bottom: 2px solid #E9405A;
 }
 
 /* Responsive
@@ -353,7 +353,7 @@ footer .copyright {
         margin-right: 0.5em;
     }
     .home-jumbo h1,
-    #services-jumbo h1 {
+    {
         margin-top: 45px;
         margin-bottom: 20px;
         font-size: 3em;
@@ -378,14 +378,10 @@ footer .copyright {
         font-size: 1.3em;
         line-height: 1.2em;
     }
-
-    .marketing h1 {
+    .tile h1 {
         font-size: 2.857142857142857em;
     }
-    .marketing h2 {
-        font-size: 1.9em;
-    }
-    .marketing p {
+    p.icon-tile {
         font-size: 1em;
     }
 }
