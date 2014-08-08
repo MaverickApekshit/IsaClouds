@@ -108,6 +108,18 @@ h2.down-arrow {
     font-weight: normal;
 }
 
+#sf-logo {
+    padding: 0 3em 0 0;
+}
+#veeva-logo {
+    padding-top: 2em;
+}
+#heroku-logo {
+    padding-top: 1em;
+}
+span.firstword {
+    border-bottom: 2px solid #E9405A;
+}
 /* Tiles
 -------------------------------------------------- */
 
@@ -308,19 +320,6 @@ p.icon-tile {
     margin-bottom: 2%;
 }
 
-#sf-logo {
-    padding: 0 3em 0 0;
-}
-#veeva-logo {
-    padding-top: 2em;
-}
-#heroku-logo {
-    padding-top: 1em;
-}
-span.firstword {
-    border-bottom: 2px solid #E9405A;
-}
-
 /* Responsive
 -------------------------------------------------- */
 
@@ -377,6 +376,15 @@ span.firstword {
         margin-top: 17%;
         font-size: 1.3em;
         line-height: 1.2em;
+    }
+    .marketing h1 {
+        font-size: 2.857142857142857em;
+    }
+    .marketing h2 {
+        font-size: 1.9em;
+    }
+    .marketing p {
+        font-size: 1em;
     }
     .tile h1 {
         font-size: 2.857142857142857em;

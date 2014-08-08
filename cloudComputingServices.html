@@ -41,8 +41,25 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
+                <!--button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button-->
+
                 <a class="navbar-brand" href="index.html"><span class="text-logo"><span class="brand-color1">ISA</span> <span class="red-text">Clouds</span></span> <sub>(Beta)</sub></a>
             </div>
+
+            <!--div class="collapse navbar-collapse">
+                <p class="navbar-text navbar-right" id="social-buttons">
+                    <a href="#" class="navbar-link"><span class="fa fa-linkedin"></span></a>
+                    <a href="#" class="navbar-link"><span class="fa fa-twitter"></span></a>
+                    <a href="#" class="navbar-link"><span class="fa fa-google-plus"></span></a>
+                    <a href="#" class="navbar-link"><span class="fa fa-facebook"></span></a>
+                </p>
+            </div-->
+            <!-- /.nav-collapse-->
         </div>
     </nav>
 
@@ -52,7 +69,7 @@
         <!-- Jumbottron -->
         <div class="jumbotron home-jumbo">
             <div class="container">
-                <h2 class="text-justify">OK! So, we understanding that your interest is in <span class="red-text"><b>Cloud Computing</b></span>, which is great. Today, there is a lot happening in the Cloud Computing space. And, we can assure you that your time with us in discussing your needs will surely be a value add in your Cloud Computing initiative. Let us start with identifying your need…</h2>
+                <h2 class="text-justify">OK! So, we understand that your interest is in <span class="red-text"><b>Cloud Computing</b></span>, which is great. Today, there is a lot happening in the Cloud Computing space. And, we can assure you that your time with us in discussing your needs will surely be a value add in your Cloud Computing initiative. Let us start with identifying your need…</h2>
             </div>
         </div>
 
@@ -174,119 +191,132 @@
 
         <!-- Form -->
 
-        <div class="container tmarg">
+        <div class="container">
             <form class="form-horizontal">
-
-                <div class="row">
-                    <div class="form-group col-sm-6">
-                        <label for="fname" class="col-sm-2 control-label">First Name:</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="fname" placeholder="(required)" required />
-                        </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Personal Details:</h3>
                     </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label for="fname" class="col-sm-2 control-label">First Name:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="fname" placeholder="(required)" required />
+                                </div>
+                            </div>
 
-                    <div class="form-group col-sm-6">
-                        <label for="lname" class="col-sm-2 control-label">Last Name:</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="lname" placeholder="(required)" required />
+                            <div class="form-group col-sm-6">
+                                <label for="lname" class="col-sm-2 control-label">Last Name:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="lname" placeholder="(required)" required />
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <div class="form-group col-sm-6">
-                        <label for="title" class="col-sm-2 control-label">Title:</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="title" />
-                        </div>
-                    </div>
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label for="title" class="col-sm-2 control-label">Title:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="title" />
+                                </div>
+                            </div>
 
-                    <div class="form-group col-sm-6">
-                        <label for="role" class="col-sm-2 control-label">Role:</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="role" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="form-group col-sm-4">
-                        <label for="email" class="col-md-3 control-label">Email:</label>
-                        <div class="col-md-9">
-                            <input type="email" class="form-control" id="email" placeholder="(required)" required />
-                        </div>
-                    </div>
-                    <div class="form-group col-sm-4">
-                        <label for="phone" class=" col-md-3 control-label">Phone:</label>
-                        <div class="col-md-9">
-                            <input type="tel" class="form-control" id="phone" />
-                        </div>
-                    </div>
-
-                    <div class="form-group col-sm-4">
-                        <label for="mobile" class=" col-md-4 control-label">Mobile:</label>
-                        <div class="col-md-8">
-                            <input type="tel" class="form-control" id="mobile" />
+                            <div class="form-group col-sm-6">
+                                <label for="role" class="col-sm-2 control-label">Role:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="role" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="comm" class="col-sm-4 control-label">Your Preferred Mode of Communication :</label>
-                    <div class="col-sm-8">
-                        <label class="radio-inline">
-                            <input type="radio" name="comm" id="preferEmail" value="Email">Email</label>
-                        <label class="radio-inline">
-                            <input type="radio" name="comm" id="preferPhone" value="Phone">Phone
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="comm" id="preferMobile" value="Mobile">Mobile
-                        </label>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Contact Info:</h3>
                     </div>
-                </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="form-group col-sm-4">
+                                <label for="email" class="col-md-3 control-label">Email:</label>
+                                <div class="col-md-9">
+                                    <input type="email" class="form-control" id="email" placeholder="(required)" required />
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="phone" class=" col-md-3 control-label">Phone:</label>
+                                <div class="col-md-9">
+                                    <input type="tel" class="form-control" id="phone" />
+                                </div>
+                            </div>
 
-                <div class="row">
-                    <div class="form-group col-sm-4">
-                        <label for="company" class="col-md-3 control-label">Company:</label>
-                        <div class="col-md-9">
-                            <input type="text" class="form-control" id="company" />
+                            <div class="form-group col-sm-4">
+                                <label for="mobile" class=" col-md-4 control-label">Mobile:</label>
+                                <div class="col-md-8">
+                                    <input type="tel" class="form-control" id="mobile" />
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="form-group col-sm-4">
-                        <label for="ccindustry" class="col-md-3 control-label">Industry:</label>
-                        <div class="col-md-9">
-                            <input type="text" class="form-control" id="ccindustry" />
+                        <div class="form-group">
+                            <label for="comm" class="col-sm-4 control-label">Your Preferred Mode of Communication :</label>
+                            <div class="col-sm-8">
+                                <label class="radio-inline">
+                                    <input type="radio" name="comm" id="preferEmail" value="Email">Email</label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="comm" id="preferPhone" value="Phone">Phone
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="comm" id="preferMobile" value="Mobile">Mobile
+                                </label>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="form-group col-sm-4">
-                        <label for="ccemployees" class="col-md-4 control-label">Employees:</label>
-                        <div class="col-md-8">
-                            <input type="number" class="form-control" id="ccemployees" />
+                        <div class="row">
+                            <div class="form-group col-sm-4">
+                                <label for="company" class="col-md-3 control-label">Company:</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="company" />
+                                </div>
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <label for="ccindustry" class="col-md-3 control-label">Industry:</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="ccindustry" />
+                                </div>
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <label for="ccemployees" class="col-md-4 control-label">Employees:</label>
+                                <div class="col-md-8">
+                                    <input type="number" class="form-control" id="ccemployees" />
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <div class="form-group col-sm-4">
-                        <label for="cccountry" class=" col-md-3 control-label">Country:</label>
-                        <div class="col-md-9">
-                            <input type="text" class="form-control" id="cccountry" />
-                        </div>
-                    </div>
+                        <div class="row">
+                            <div class="form-group col-sm-4">
+                                <label for="cccountry" class=" col-md-3 control-label">Country:</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="cccountry" />
+                                </div>
+                            </div>
 
-                    <div class="form-group col-sm-4">
-                        <label for="ccstate" class=" col-md-3 control-label">State:</label>
-                        <div class="col-md-9">
-                            <input type="text" class="form-control" id="ccstate" />
-                        </div>
-                    </div>
+                            <div class="form-group col-sm-4">
+                                <label for="ccstate" class=" col-md-3 control-label">State:</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" id="ccstate" />
+                                </div>
+                            </div>
 
-                    <div class="form-group col-sm-4">
-                        <label for="ccZipCode" class=" col-md-4 control-label">Zip Code:</label>
-                        <div class="col-md-8">
-                            <input type="text" class="form-control" id="ccZipCode" />
+                            <div class="form-group col-sm-4">
+                                <label for="ccZipCode" class=" col-md-4 control-label">Zip Code:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="ccZipCode" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -334,7 +364,7 @@
 
                     <p>ISA Clouds' global industry experience better equips us to deliver both the strategic blueprint and the technical expertise customers require from a consulting team.</p>
 
-                    <a href="#" class="btn btn-sm btn-info" role="button">Learn more <span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+                    <a href="why_isa.html" class="btn btn-sm btn-info" role="button">Learn more <span class="glyphicon glyphicon-circle-arrow-right"></span></a>
                 </div>
             </div>
 
