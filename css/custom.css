@@ -53,7 +53,6 @@ a.no-dec:active {
 }
 .text-logo {
     font-family: 'Kalam', cursive;
-    color: #fff !important;
 }
 .brand-color1 {
     font-weight: bolder;
@@ -108,18 +107,26 @@ h2.down-arrow {
     font-weight: normal;
 }
 
-#sf-logo {
-    padding: 0 3em 0 0;
+/* Marketing section
+-------------------------------------------------- */
+
+.marketing {
+    color: #313540;
 }
-#veeva-logo {
-    padding-top: 2em;
+.marketing h1 {
+    font-size: 4.285714285714286em;
+    font-weight: 200;
+    line-height: 1;
+    letter-spacing: -1px;
 }
-#heroku-logo {
-    padding-top: 1em;
+.marketing h2 {
+    color: #313540;
 }
-span.firstword {
-    border-bottom: 2px solid #E9405A;
+.marketing p {
+    font-size: 1.142857142857143em;
+    color: #313540;
 }
+
 /* Tiles
 -------------------------------------------------- */
 
@@ -298,7 +305,6 @@ p.icon-tile {
     margin-bottom: 2%;
 }
 
-
 /* Why Us Page
 -------------------------------------------------- */
 
@@ -306,18 +312,35 @@ p.icon-tile {
     color: #313540;
     background-color: #FCDF15;
     margin-bottom: 0;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
 }
 .why-jumbo h1 {
-    margin-top: 4%;
-    font-family: QuireSans;
+    margin-top: 50px;
+    font-family: 'Hind', sans-serif;
     font-size: 5em;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
 }
 .grey-bg {
     background-color: #F0F0F0;
     padding-top: 2%;
     padding-bottom: 1%;
     margin-bottom: 2%;
+}
+.bordertop {
+    border-top: 1px solid #EEE;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+span.firstword {
+    border-bottom: 2px solid #E9405A;
+}
+#tech-spec div.row {
+    margin: 2em 0;
+}
+#veeva-logo {
+    padding: 0 3em;
+}
+#heroku-logo {
+    padding: 0 2em;
 }
 
 /* Responsive
@@ -391,5 +414,8 @@ p.icon-tile {
     }
     p.icon-tile {
         font-size: 1em;
+    }
+    .why-jumbo h1 {
+        font-size: 3em;
     }
 }

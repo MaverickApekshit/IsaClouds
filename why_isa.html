@@ -14,9 +14,13 @@
 
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    
+    <!-- 3rd Party CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.css" />
+    <link href='http://fonts.googleapis.com/css?family=Kalam' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ek+Mukta' rel='stylesheet' type='text/css'>
 
     <!--Custom CSS-->
     <link rel="stylesheet" href="css/custom.css">
@@ -34,176 +38,185 @@
 <body>
     <!--navbar-->
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <a class="navbar-brand" href="index.html"><span class="brand-color1">ISA</span> <span class="brand-color2">Clouds</span></a>
+                <a class="navbar-brand" href="index.html"><span class="text-logo"><span class="brand-color1">ISA</span> <span class="red-text">Clouds</span></span> <sub>(Beta)</sub></a>
             </div>
-
-            <div class="collapse navbar-collapse">
-                <p class="navbar-text navbar-right" id="social-buttons">
-                    <a href="#" class="navbar-link"><span class="fa fa-github"></span></a>
-                    <a href="#" class="navbar-link"><span class="fa fa-linkedin"></span></a>
-                    <a href="#" class="navbar-link"><span class="fa fa-twitter"></span></a>
-                    <a href="#" class="navbar-link"><span class="fa fa-google-plus"></span></a>
-                    <a href="#" class="navbar-link"><span class="fa fa-facebook"></span></a>
-                    <a href="#" class="navbar-link"><span class="fa fa-pinterest"></span></a>
-                    <a href="#" class="navbar-link"><span class="fa fa-stumbleupon"></span></a>
-                    <a href="#" class="navbar-link"><span class="fa fa-youtube"></span></a>
-                </p>
-            </div>
-            <!-- /.nav-collapse-->
         </div>
-    </div>
-    <!-- /.navbar-->
+    </nav>
 
     <!-- Jumbotron -->
 
-    <div id="services-jumbo" class="jumbotron text-center blue-jumbo">
-        <h1 class="bounceInDownAnime">Why ISA Clouds</h1>
+    <div class="jumbotron why-jumbo text-center">
+        <h1 class="animateOnScroll" data-action="bounceInDown">Why <span class="red-text">ISA Clouds</span></h1>
     </div>
 
-    <div class="custom-container">
-        <div class="marketing">
-            <div id="whyUs">
-                <p class="lead text-justify">ISA Clouds' global industry experience better equips us to deliver both the strategic blueprint and the technical expertise customers require from a consulting team.</p>
+    <div class="grey-bg">
+        <div class="container page-header">
+            <p class="lead text-justify animateOnScroll" data-action="fadeInLeft">ISA Clouds' global industry experience better equips us to deliver both the strategic blueprint and the technical expertise customers require from a consulting team.</p>
 
-                <p class="lead text-justify">Gone are the days of building simple websites. Clients are demanding more functionality and better results from their websites and we create unforgettable brand experiences. Our passion is helping design and build solutions that strike the perfect balance between users, business, and technology.</p>
+            <p class="text-justify animateOnScroll" data-action="fadeInRight">Gone are the days of building simple websites. Clients are demanding more functionality and better results from their websites and we create unforgettable brand experiences. Our passion is helping design and build solutions that strike the perfect balance between users, business, and technology.</p>
+        </div>
+    </div>
 
-                <div class="row">
-                    <div class="col-xs-3">
-                        <p>Small enough to intently ‘listen’ BIG enough to efficiently ‘deliver’</p>
-                    </div>
-                    <div class="col-xs-3">
-                        <p>Business Centric vs. Technology Centric Approach</p>
-                    </div>
-                    <div class="col-xs-3">
-                        <p>Over a decade of Salesforce.com implementations, custom developments, and integrations experiences</p>
-                    </div>
-                    <div class="col-xs-3">
-                        <p>Recurrent Customer Success Audits for Continuous Improvement & Enhancements</p>
-                    </div>
+    <div class="container">
+        <img class="img-responsive center-block animateOnScroll" data-action="zoomInDown" src="images/isa_clouds_pink.png" />
+        <div class="row animateOnScroll" data-action="flipInX">
+            <div class="col-sm-3">
+                <p><span class="glyphicon glyphicon-ok"></span> Small enough to intently <b>‘listen’</b> BIG enough to efficiently <b>‘deliver’</b>
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <p><span class="glyphicon glyphicon-ok"></span>  <b>Business Centric</b> vs. <b>Technology Centric</b> Approach</p>
+            </div>
+            <div class="col-sm-3">
+                <p><span class="glyphicon glyphicon-ok"></span>  <b>Consultative Approach</b> vs. <b>Task Based Delivery</b> Model</p>
+            </div>
+
+            <div class="col-sm-3">
+                <p><span class="glyphicon glyphicon-ok"></span> IPs and Frameworks utilization for Quicker Time-to-Market</p>
+            </div>
+        </div>
+
+        <div class="row animateOnScroll" data-action="flipInX">
+            <div class="col-sm-3">
+                <p><span class="glyphicon glyphicon-ok"></span> Over a decade of <b>Salesforce.com</b> implementations, custom developments, and integrations experiences</p>
+            </div>
+
+            <div class="col-sm-3">
+                <p><span class="glyphicon glyphicon-ok"></span> Recurrent Customer Success Audits for <b>Continuous Improvement & Enhancements</b>
+                </p>
+            </div>
+
+            <div class="col-sm-3">
+                <p><span class="glyphicon glyphicon-ok"></span>  <b>Experiences:</b> Less than 10 licenses to more than 120,000 licenses Successful Salesforce.com engagements delivered for small to very large enterprises</p>
+            </div>
+
+            <div class="col-sm-3">
+                <p><span class="glyphicon glyphicon-ok"></span> Best Practices gained from <b>vast industry verticals experiences</b>, for Salesforce.com Implementations</p>
+            </div>
+        </div>
+
+        <div id="tech-spec" class="bordertop">
+            <h2 class="text-center"><span class="firstword">Technology</span> Specialists</h2>
+
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 animateOnScroll" data-action="rollIn">
+                    <img class="img-responsive center-block" src="images/salesforce-logo.png" />
                 </div>
 
-                <div class="row">
-                    <div class="col-xs-3">
-                        <p>Experiences : Less than 10 licenses to more than 120,000 licenses Successful Salesforce.com engagements delivered for small to very large enterprises</p>
-                    </div>
-                    <div class="col-xs-3">
-                        <p>Consultative Approach vs. Task Based Delivery Model</p>
-                    </div>
-                    <div class="col-xs-3">
-                        <p>Best Practices gained from vast industry verticals experiences, for Salesforce.com Implementations</p>
-                    </div>
-                    <div class="col-xs-3">
-                        <p>IPs and Frameworks utilization for Quicker Time-to-Market</p>
-                    </div>
+                <div class="col-xs-6 col-sm-3 animateOnScroll" data-action="rollIn">
+                    <img class="img-responsive center-block" src="images/google-app-engine.png" />
                 </div>
 
-                <div class="row bordertop">
-                    <h3 class="text-center"><span class="firstword">Technology</span> Specialists</h3>
-                    <br />
+                <div class="clearfix hidden-sm hidden-md hidden-lg"></div>
 
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-xs-6 text-center">
-                                <img id="sf-logo" class="img-responsive tech-spec-img" src="images/salesforce-logo.png" />
-                            </div>
-
-                            <div class="col-xs-6 text-center">
-                                <img id="veeva-logo" class="img-responsive tech-spec-img" src="images/veevalogo.png" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="clearfix hidden-md hidden-lg"></div>
-
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-xs-6 text-center">
-                                <img id="heroku-logo" class="img-responsive tech-spec-img" src="images/heroku.png" />
-                            </div>
-
-                            <div class="col-xs-6 text-center">
-                                <img id="aws-logo" class="img-responsive tech-spec-img" src="images/AWS_logo.png" />
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-xs-6 col-sm-3 animateOnScroll" data-action="rollIn">
+                    <img class="img-responsive center-block" src="images/Codeigniter.png" />
                 </div>
 
-                <div class="tpad">
-                    <img class="img-responsive center-block" src="images/tech.jpg" />
+                <div class="col-xs-6 col-sm-3 animateOnScroll" data-action="rollIn">
+                    <img class="img-responsive center-block" src="images/bootstrap1.jpg" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="veeva-logo" class="col-xs-6 col-sm-3 animateOnScroll" data-action="rollIn">
+                    <img class="img-responsive center-block" src="images/Veeva_logo.jpg" />
+                </div>
+
+                <div id="heroku-logo" class="col-xs-6 col-sm-3 animateOnScroll" data-action="rollIn">
+                    <img class="img-responsive center-block" src="images/heroku-logo-light-300x100.png" />
+                </div>
+
+                <div class="clearfix hidden-sm hidden-md hidden-lg"></div>
+
+                <div class="col-xs-6 col-sm-3 animateOnScroll" data-action="rollIn">
+                    <img class="img-responsive center-block" src="images/PHP.png" />
+                </div>
+
+                <div class="col-xs-6 col-sm-3 animateOnScroll" data-action="rollIn">
+                    <img class="img-responsive center-block" src="images/Git-Logo.png" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 animateOnScroll" data-action="rollIn">
+                    <img class="img-responsive center-block" src="images/HTML5_Logo.png" />
+                </div>
+
+                <div class="col-xs-6 col-sm-3 animateOnScroll" data-action="rollIn">
+                    <img class="img-responsive center-block" src="images/CSS3.png" />
+                </div>
+
+                <div class="clearfix hidden-sm hidden-md hidden-lg"></div>
+
+                <div class="col-xs-6 col-sm-3 animateOnScroll" data-action="rollIn">
+                    <img class="img-responsive center-block" src="images/js-logo.png" />
+                </div>
+
+                <div class="col-xs-6 col-sm-3 animateOnScroll" data-action="rollIn">
+                    <img class="img-responsive center-block" src="images/jQuery.png" />
                 </div>
             </div>
         </div>
     </div>
+
     <!--Footer -->
 
     <footer>
-        <div class="custom-container">
+        <div class="container">
             <div class="row">
                 <div class="col-sm-4">
-                    <h4>Services</h4>
+                    <h3>Services</h3>
 
                     <ul class="footer-links">
-                        <a href="cloud_computing.html">
-                            <li>Cloud Computing Consulting</li>
-                        </a>
-                        <a href="crm.html">
-                            <li>CRM Consulting</li>
-                        </a>
-                        <a href="salesforce.html">
-                            <li>Salesforce.com</li>
-                        </a>
-                        <a href="ecommerce_solutions.html">
-                            <li>E-commerce Solutions</li>
-                        </a>
-                        <a href="mobile.html">
-                            <li>Mobile Application Development</li>
-                        </a>
-                        <a href="web_dev.html">
-                            <li>Website Development</li>
-                        </a>
+                        <li>
+                            <a href="cloudComputingServices.html">Cloud Computing Consulting</a>
+                        </li>
+
+                        <li>
+                            <a href="salesforceServices.html">Salesforce.com</a>
+                        </li>
+
+                        <li>
+                            <a href="#">CRM Consulting</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Mobile Application Development</a>
+                        </li>
+
+                        <li>
+                            <a href="#">E-commerce Solutions</a>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="col-sm-8">
-                    <h3>Connect with us:</h3>
+                    <h3>Why ISA Clouds</h3>
 
-                    <p class="footer-social-icons clearfix tpad">
+                    <p>ISA Clouds' global industry experience better equips us to deliver both the strategic blueprint and the technical expertise customers require from a consulting team.</p>
+
+                    <a href="why_isa.html" class="btn btn-sm btn-info" role="button">Learn more <span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+
+                    <!--p class="footer-social-icons clearfix tpad">
                         <a id="linkedin-icon-footer" target="_blank" href="#"><span class="fa fa-linkedin"></span></a>
 
                         <a id="googleplus-icon-footer" target="_blank" href="#"><span class="fa fa-google-plus"></span></a>
                         <a id="twitter-icon-footer" target="_blank" href="#"><span class="fa fa-twitter"></span></a>
-
-                        <a id="stumble-icon-footer" target="_blank" href="#"><span class="fa fa-stumbleupon"></span></a>
-                    </p>
+                    </p-->
                 </div>
             </div>
 
             <hr class="soften1 copyhr" />
 
-            <div class="row copyright">
-                <div class="col-sm-4 col-md-4 text-center">
-                    <p>Copyright &copy; 2014. ISA Clouds. All rights reserved.</p>
-                </div>
+            <div class="copyright text-center">
+                <p>Copyright &copy; 2014. ISA Clouds. All rights reserved.</p>
 
-                <div class="col-sm-4 col-md-4 text-center">
-                    <p><a href="#"><span class="glyphicon glyphicon-arrow-up"></span> Back to Top</a>
-                    </p>
-                </div>
-
-                <div class="col-sm-4 col-md-4 text-center">
-                    <p>Developed by:
-                        <br />Apekshit Yadav</p>
-                </div>
+                <p><a href="#"><span class="glyphicon glyphicon-arrow-up"></span> Back to Top</a>
+                </p>
             </div>
         </div>
     </footer>
@@ -214,9 +227,11 @@
     <!--Bootstrap JS-->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
+    <!-- 3rd Party JS -->
     <script src="js/viewportchecker.js"></script>
 
-    <script src="js/custom.js"></script>
+    <!-- Custom JS -->
+    <script src="js/animate.js"></script>
 </body>
 
 </html>
