@@ -107,26 +107,6 @@ h2.down-arrow {
     font-weight: normal;
 }
 
-/* Marketing section
--------------------------------------------------- */
-
-.marketing {
-    color: #313540;
-}
-.marketing h1 {
-    font-size: 4.285714285714286em;
-    font-weight: 200;
-    line-height: 1;
-    letter-spacing: -1px;
-}
-.marketing h2 {
-    color: #313540;
-}
-.marketing p {
-    font-size: 1.142857142857143em;
-    color: #313540;
-}
-
 /* Tiles
 -------------------------------------------------- */
 
@@ -337,10 +317,15 @@ span.firstword {
     margin: 2em 0;
 }
 #veeva-logo {
-    padding: 0 3em;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 #heroku-logo {
-    padding: 0 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+#wp-logo {
+    padding-top: 2em;
 }
 
 /* Responsive
@@ -388,6 +373,9 @@ span.firstword {
         font-size: 0.9em;
         margin-bottom: 10px;
     }
+    #e-commerce-tile {
+        text-align: center;
+    }
 }
 /*Landscape phones*/
 
@@ -400,15 +388,6 @@ span.firstword {
         font-size: 1.3em;
         line-height: 1.2em;
     }
-    .marketing h1 {
-        font-size: 2.857142857142857em;
-    }
-    .marketing h2 {
-        font-size: 1.9em;
-    }
-    .marketing p {
-        font-size: 1em;
-    }
     .tile h1 {
         font-size: 2.857142857142857em;
     }
@@ -417,5 +396,16 @@ span.firstword {
     }
     .why-jumbo h1 {
         font-size: 3em;
+    }
+    #veeva-logo {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    #heroku-logo {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    #wp-logo {
+        padding-top: 1.5em;
     }
 }
