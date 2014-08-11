@@ -267,6 +267,10 @@ footer .copyright {
 /* Services
 -------------------------------------------------- */
 
+#cctypo {
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
 .tile h1 {
     font-size: 4.285714285714286em;
 }
