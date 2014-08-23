@@ -113,6 +113,9 @@ h2.down-arrow {
     font-weight: normal;
 }
 
+/* Tiles
+-------------------------------------------------- */
+
 .tile {
     cursor: pointer;
     margin: 2%;
@@ -222,7 +225,48 @@ h2.down-arrow {
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
 }
+/* Carousel
+-------------------------------------------------- */
 
+.carousel {
+    height: 300px;
+}
+.carousel-caption {
+    z-index: 10;
+}
+.carousel .item {
+    height: 300px;
+    background-color: #FFF;
+}
+
+#homeCarousel .carousel-control {
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0px, transparent 100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0px, transparent 100%);
+}
+#homeCarousel .carousel-control span {
+    color: #a0a0a0;
+}
+.carousel-indicators li {
+    border: 1px solid #a0a0a0;
+}
+.carousel-indicators .active {
+    background-color: #A0A0A0;
+}
+#homeCarousel h1 {
+    color: #000;
+    font-size: 4em;
+}
+#homeCarousel h2 {
+    color: #000;
+    font-size: 4em;
+}
+#homeCarousel h3 {
+    color: #000;
+    font-size: 3em;
+}
+#homeCarousel p {
+    color: #000;
+}
 /* Footer
 -------------------------------------------------- */
 
@@ -313,9 +357,7 @@ p.icon-tile {
     margin-top: 20px;
     padding-top: 20px;
 }
-span.firstword {
-    border-bottom: 2px solid #E9405A;
-}
+
 #tech-spec div.row {
     margin: 2em 0;
 }
@@ -462,6 +504,15 @@ body.nav-expanded {
 .icon-list p span {
     margin-right: 1em;
 }
+.details p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.details h2 {
+    font-size: 32px;
+    line-height: 1.5;
+    color: #E9405A;
+}
 /* Cloud Computing Details
 -------------------------------------------------- */
 
@@ -474,17 +525,29 @@ body.nav-expanded {
 #cloudAdoptionStrategy img {
     margin-top: 1.5em;
 }
+#cloudSecurityStrategy img {
+    margin-top: 3em;
+}
 #applicationsMigrationToCloud img {
-    margin-top: 1em;
+    margin-top: 4em;
+}
+/* CRM Details
+-------------------------------------------------- */
+
+#mandate img {
+    margin-top: 20%;
+}
+.enablers-icons {
+    margin-top: 3em;
 }
 
 /* Responsive
 -------------------------------------------------- */
 
-/* Tablet to desktop
+/* Tablet
 ------------------------- */
 
-@media (min-width: 768px) and (max-width: 980px) {
+@media (min-width: 768px) and (max-width: 992px) {
     .home-jumbo h1 {
         margin-top: 75px;
         font-size: 3em;
@@ -497,8 +560,26 @@ body.nav-expanded {
         font-size: 0.9em;
         margin-bottom: 50px;
     }
+    #homeCarousel h2 {
+        font-size: 3em;
+    }
+    #homeCarousel h3 {
+        font-size: 2.5em;
+    }
+    .sq-img {
+        padding: 0em 3em;
+    }
+    #bootstrap-logo {
+        padding: 0 2.5em;
+    }
+    #css-logo {
+        padding: 0 4em;
+    }
+    .img-tmarg {
+        margin-top: 4em;
+    }
 }
-/* Tablet
+/* Phones
 ------------------------- */
 
 @media (max-width: 767px) {
@@ -526,11 +607,47 @@ body.nav-expanded {
     #e-commerce-tile {
         text-align: center;
     }
+    #homeCarousel h1 {
+        font-size: 2.5em;
+    }
+    #homeCarousel h2 {
+        font-size: 2em;
+    }
+    #homeCarousel h3 {
+        font-size: 2em;
+    }
+    #homeCarousel p {
+        font-size: 0.9em;
+    }
+    .sq-img {
+        padding: 0em 2.5em;
+    }
+    #CI-logo {
+        padding: 0 3.5em;
+    }
+    #bootstrap-logo {
+        padding: 0 2.5em;
+    }
+    #php-logo {
+        padding: 0 1.5em;
+    }
+    #git-logo {
+        padding: 0 1.5em;
+    }
+    #css-logo {
+        padding: 0 3.5em 1.5em;
+    }
+    .img-tmarg {
+        margin-top: 4em;
+    }
     .serviceDetail-jumbo h1 {
         font-size: 3em;
     }
     .serviceDetail-jumbo p {
         font-size: 1.142857142857143em;
+    }
+    .details p {
+        font-size: 14px;
     }
 }
 /*Landscape phones*/
