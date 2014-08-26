@@ -89,10 +89,10 @@ hr.soften1 {
     margin-bottom: 4%;
 }
 .home-jumbo h1 {
-    margin-top: 150px;
-    margin-bottom: 120px;
+    margin-top: 5%;
+    margin-bottom: 1%;
     font-family: 'Hind', sans-serif;
-    line-height: 1.2em;
+    line-height: 1em;
     font-size: 5em;
     text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
 }
@@ -103,14 +103,58 @@ hr.soften1 {
     line-height: 1.2em;
 }
 .home-jumbo p {
-    margin-bottom: 50px;
+    margin-bottom: 1%;
     font-family: 'Ek Mukta', sans-serif;
     font-size: 1.1em;
 }
 
 h2.down-arrow {
+    margin-top: 2%;
     padding-bottom: 2%;
     font-weight: normal;
+}
+
+/* Carousel
+-------------------------------------------------- */
+
+.carousel {
+    height: 275px;
+}
+.carousel-caption {
+    z-index: 10;
+}
+.carousel .item {
+    height: 275px;
+    background-color: #FFF;
+}
+
+#homeCarousel .carousel-control {
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0px, transparent 100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0px, transparent 100%);
+}
+#homeCarousel .carousel-control span {
+    color: #a0a0a0;
+}
+.carousel-indicators li {
+    border: 1px solid #a0a0a0;
+}
+.carousel-indicators .active {
+    background-color: #A0A0A0;
+}
+#homeCarousel h1 {
+    color: #000;
+    font-size: 4em;
+}
+#homeCarousel h2 {
+    color: #000;
+    font-size: 4em;
+}
+#homeCarousel h3 {
+    color: #000;
+    font-size: 3em;
+}
+#homeCarousel p {
+    color: #000;
 }
 
 /* Tiles
@@ -126,6 +170,7 @@ h2.down-arrow {
     background-color: #4AE9FF;
 }
 .tile-inactive {
+    /*background-color: #FFE6B0;*/
     background-color: #F0F0F0;
 }
 
@@ -225,48 +270,7 @@ h2.down-arrow {
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
 }
-/* Carousel
--------------------------------------------------- */
 
-.carousel {
-    height: 300px;
-}
-.carousel-caption {
-    z-index: 10;
-}
-.carousel .item {
-    height: 300px;
-    background-color: #FFF;
-}
-
-#homeCarousel .carousel-control {
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0px, transparent 100%);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0px, transparent 100%);
-}
-#homeCarousel .carousel-control span {
-    color: #a0a0a0;
-}
-.carousel-indicators li {
-    border: 1px solid #a0a0a0;
-}
-.carousel-indicators .active {
-    background-color: #A0A0A0;
-}
-#homeCarousel h1 {
-    color: #000;
-    font-size: 4em;
-}
-#homeCarousel h2 {
-    color: #000;
-    font-size: 4em;
-}
-#homeCarousel h3 {
-    color: #000;
-    font-size: 3em;
-}
-#homeCarousel p {
-    color: #000;
-}
 /* Footer
 -------------------------------------------------- */
 
@@ -560,6 +564,13 @@ body.nav-expanded {
         font-size: 0.9em;
         margin-bottom: 50px;
     }
+    .carousel {
+    height: 260px;
+    }
+
+    .carousel .item {
+        height: 260px;
+    }
     #homeCarousel h2 {
         font-size: 3em;
     }
@@ -586,11 +597,7 @@ body.nav-expanded {
     .tpad {
         margin-top: 2em;
     }
-    .custom-container {
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-    }
-    .home-jumbo h1,
+    .home-jumbo h1
     {
         margin-top: 45px;
         margin-bottom: 20px;
@@ -604,9 +611,10 @@ body.nav-expanded {
         font-size: 0.9em;
         margin-bottom: 10px;
     }
-    #e-commerce-tile {
-        text-align: center;
+    h2.down-arrow {
+    margin-top: 1% !important;
     }
+    
     #homeCarousel h1 {
         font-size: 2.5em;
     }
@@ -618,6 +626,9 @@ body.nav-expanded {
     }
     #homeCarousel p {
         font-size: 0.9em;
+    }
+    #e-commerce-tile {
+        text-align: center;
     }
     .sq-img {
         padding: 0em 2.5em;
