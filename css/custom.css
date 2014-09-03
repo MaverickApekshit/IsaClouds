@@ -86,7 +86,7 @@ hr.soften1 {
     color: #313540;
     background-color: #FCDF15;
     padding-bottom: 0;
-    margin-bottom: 4%;
+    margin-bottom: 0;
 }
 .home-jumbo h1 {
     margin-top: 5%;
@@ -126,6 +126,11 @@ h2.down-arrow {
 .carousel .item {
     height: 275px;
     background-color: #FFF;
+}
+
+#homeCarousel
+{
+    margin-bottom: 1%;
 }
 
 #homeCarousel .carousel-control {
@@ -170,7 +175,6 @@ h2.down-arrow {
     background-color: #4AE9FF;
 }
 .tile-inactive {
-    /*background-color: #FFE6B0;*/
     background-color: #F0F0F0;
 }
 
@@ -314,6 +318,11 @@ footer .copyright {
 /* Services
 -------------------------------------------------- */
 
+#sub-services-options
+{
+    margin-top: 4%;
+}
+
 #cctypo {
     padding-top: 4%;
     padding-bottom: 2%;
@@ -328,12 +337,22 @@ p.icon-tile {
     margin-top: 1em;
     border-radius: 1.8em;
 }
+
 /* Contact Form
 --------------------------------------------------*/
+#contactForm form
+{
+    margin-top: 4%;
+}
 
 #contactForm p {
     margin-top: 2%;
     margin-bottom: 2%;
+}
+
+.modal-footer a
+{
+    margin-bottom: 3%;
 }
 
 /* Why Us Page
@@ -543,6 +562,59 @@ body.nav-expanded {
 }
 .enablers-icons {
     margin-top: 3em;
+}
+/* About Us
+-------------------------------------------------- */
+
+.social-icons span {
+    margin: 0.15em;
+    font-size: 2em;
+}
+#linkedin-icon {
+    color: #007bb6;
+}
+#googleplus-icon {
+    color: #dd4b39;
+}
+#twitter-icon {
+    color: #00aced;
+}
+#facebook-icon {
+    color: #3b5998;
+}
+#github-icon {
+    color: #333;
+}
+#stumble-icon {
+    color: #EB4823;
+}
+
+/* Profile
+-------------------------------------------------- */
+
+#profile-jumbo
+{
+    padding-top: 70px;
+}
+#profile-jumbo h2 {
+    font-size: 2.5em;
+    letter-spacing: -1px;
+}
+#profile-jumbo p {
+    font-size: 1.1em;
+}
+address a {
+    color: #313540;
+}
+address a:hover {
+    text-decoration: none;
+}
+address a:active {
+    text-decoration: none;
+}
+#myTab a {
+    color: #E74C3C;
+    font-size: 1.2em;
 }
 
 /* Responsive
