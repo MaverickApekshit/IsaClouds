@@ -65,17 +65,26 @@ a.no-dec:active {
 hr.soften {
     height: 1px;
     margin: 60px 0;
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1), rgba(0, 0, 0, 0));
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
     border: 0;
 }
 hr.soften1 {
     height: 1px;
     margin: 60px 0;
-    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1), rgba(255, 255, 255, 0));
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.1), rgba(255,255,255,0));
+    background-image: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.1), rgba(255,255,255,0));
+    background-image: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.1), rgba(255,255,255,0));
+    background-image: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.1), rgba(255,255,255,0));
     border: 0;
 }
 .copyhr {
-    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, .8), rgba(255, 255, 255, 0));
+    background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.8), rgba(255,255,255,0));
+    background-image: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.8), rgba(255,255,255,0));
+    background-image: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.8), rgba(255,255,255,0));
+    background-image: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,.8), rgba(255,255,255,0));
     margin-bottom: 40px !important;
 }
 /* Home Jumbotron
@@ -117,13 +126,13 @@ h2.down-arrow {
 /* Carousel
 -------------------------------------------------- */
 
-.carousel {
+#homeCarousel.carousel {
     height: 275px;
 }
-.carousel-caption {
+#homeCarousel .carousel-caption {
     z-index: 10;
 }
-.carousel .item {
+#homeCarousel.carousel .item {
     height: 275px;
     background-color: #FFF;
 }
@@ -140,10 +149,10 @@ h2.down-arrow {
 #homeCarousel .carousel-control span {
     color: #a0a0a0;
 }
-.carousel-indicators li {
+#homeCarousel .carousel-indicators li {
     border: 1px solid #a0a0a0;
 }
-.carousel-indicators .active {
+#homeCarousel .carousel-indicators .active {
     background-color: #A0A0A0;
 }
 #homeCarousel h1 {
@@ -509,8 +518,10 @@ body.nav-expanded {
 .serviceDetail-jumbo {
     color: #313540;
     background-color: #FCDF15;
+    margin-bottom: 0;
 }
 .serviceDetail-jumbo h1 {
+    color: #E9405A;
     margin-top: 1em;
     margin-bottom: 0.5em;
     font-family: 'Hind', sans-serif;
@@ -519,7 +530,7 @@ body.nav-expanded {
 }
 .serviceDetail-jumbo p {
     font-family: 'Ek Mukta', sans-serif;
-    margin-bottom: 1.7em;
+    margin-bottom: 1em;
 }
 .icon-list p {
     padding-left: 2em;
@@ -554,6 +565,20 @@ body.nav-expanded {
 #applicationsMigrationToCloud img {
     margin-top: 4em;
 }
+
+/* Salesforce Details
+-------------------------------------------------- */
+#sfCarousel
+{
+    margin-bottom: 5%;
+}
+
+#sfCarousel img
+{
+    min-width: 100%;
+}
+
+
 /* CRM Details
 -------------------------------------------------- */
 
@@ -563,9 +588,6 @@ body.nav-expanded {
 .enablers-icons {
     margin-top: 3em;
 }
-/* About Us
--------------------------------------------------- */
-
 .social-icons span {
     margin: 0.15em;
     font-size: 2em;
@@ -636,11 +658,11 @@ address a:active {
         font-size: 0.9em;
         margin-bottom: 50px;
     }
-    .carousel {
+    #homeCarousel .carousel {
     height: 260px;
     }
 
-    .carousel .item {
+    #homeCarousel .carousel .item {
         height: 260px;
     }
     #homeCarousel h2 {
@@ -660,6 +682,10 @@ address a:active {
     }
     .img-tmarg {
         margin-top: 4em;
+    }
+    #sfCarousel h2
+    {
+        font-size: 1.5em;
     }
 }
 /* Phones
@@ -731,6 +757,10 @@ address a:active {
     }
     .details p {
         font-size: 14px;
+    }
+    #sfTab
+    {
+        font-size: 0.9em;
     }
 }
 /*Landscape phones*/
